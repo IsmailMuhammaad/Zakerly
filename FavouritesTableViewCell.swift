@@ -23,7 +23,7 @@ class FavouritesTableViewCell: UITableViewCell {
         mainBackground.layer.masksToBounds = false
         shadowView.layer.cornerRadius = 10
         shadowView.layer.masksToBounds = false
-        shadowView.layer.shadowOffset = CGSize(width: 0, height: 5)
+        shadowView.layer.shadowOffset = CGSize(width: 2, height: 3)
         shadowView.layer.shadowColor = UIColor.black.cgColor
         shadowView.layer.shadowOpacity = 0.5
         shadowView.layer.shadowRadius = 5

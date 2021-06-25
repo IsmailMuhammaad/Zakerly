@@ -1,0 +1,43 @@
+//
+//  CollectionViewCell.swift
+//  Zakerly
+//
+//  Created by Izma3iin on 6/25/21.
+//
+
+import UIKit
+
+class RecommendedCollectionViewCell: UICollectionViewCell {
+ 
+    @IBOutlet weak var instructorName: UILabel!
+    @IBOutlet weak var instructorSpeciality: UILabel!
+    @IBOutlet weak var instructorDescription: UILabel!
+    @IBOutlet weak var instructorImage: UIImageView!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        contentView.layer.cornerRadius = 10
+        contentView.layer.masksToBounds = true
+        layer.cornerRadius = 10
+        layer.masksToBounds = false
+        layer.shadowOffset = CGSize(width: 2, height: 3)
+        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowOpacity = 0.5
+        layer.shadowRadius = 5
+    
+        instructorImage.layer.cornerRadius = instructorImage.frame.width/2
+        instructorImage.layer.masksToBounds = true
+    }
+
+
+    func setupCell(image: UIImage, name: String, speciality: String, description: String){
+        
+        instructorImage.image = image
+        instructorName.text = name
+        instructorSpeciality.text = speciality
+        instructorDescription.text = description
+        
+        
+    }
+    
+}

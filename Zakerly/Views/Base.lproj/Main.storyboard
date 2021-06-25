@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="epZ-AV-vSf">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Roboto-Italic.ttf">
+            <string>Roboto-Italic</string>
+        </array>
         <array key="Segoe UI Bold.ttf">
             <string>SegoeUI-Bold</string>
         </array>
@@ -26,24 +30,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="undraw_Login_re_4vu2" translatesAutoresizingMaskIntoConstraints="NO" id="0VK-hn-A8r">
-                                <rect key="frame" x="87" y="79" width="240" height="269"/>
+                                <rect key="frame" x="87" y="79" width="240" height="268.66666666666669"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mDq-AF-vyO">
-                                <rect key="frame" x="152.5" y="59" width="109" height="71.5"/>
+                                <rect key="frame" x="152.66666666666666" y="59.000000000000007" width="108.99999999999997" height="71.666666666666686"/>
                                 <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="RMJ-8R-wIx">
-                                <rect key="frame" x="30" y="310" width="354" height="108"/>
+                                <rect key="frame" x="30" y="310.33333333333331" width="354" height="107.33333333333331"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Myd-PA-mOV" customClass="CustomTextField" customModule="Zakerly" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="354" height="45"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="44.666666666666664"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Sp-g3-L6A" customClass="CustomTextField" customModule="Zakerly" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="63" width="354" height="45"/>
+                                        <rect key="frame" x="0.0" y="62.666666666666686" width="354" height="44.666666666666657"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
@@ -53,7 +57,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A5z-ON-Cv9" customClass="CustomButton" customModule="Zakerly" customModuleProvider="target">
-                                <rect key="frame" x="30" y="429" width="354" height="54"/>
+                                <rect key="frame" x="30" y="429" width="354" height="53.666666666666686"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Sign In">
@@ -61,14 +65,14 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2Z-bJ-2Y9">
-                                <rect key="frame" x="270" y="484" width="114" height="29"/>
+                                <rect key="frame" x="270" y="483.66666666666669" width="114" height="29.000000000000057"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <state key="normal" title="Forget Password?">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wK-3e-gvS" customClass="CustomButton" customModule="Zakerly" customModuleProvider="target">
-                                <rect key="frame" x="30" y="519" width="354" height="53.5"/>
+                                <rect key="frame" x="30" y="518.66666666666663" width="354" height="54"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Sign Up">
@@ -76,7 +80,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FvJ-DY-fda" customClass="CustomButton" customModule="Zakerly" customModuleProvider="target">
-                                <rect key="frame" x="30" y="632.5" width="354" height="54"/>
+                                <rect key="frame" x="30" y="632.66666666666663" width="354" height="53.666666666666629"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <size key="titleShadowOffset" width="0.0" height="3"/>
@@ -85,10 +89,10 @@
                                 </state>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 33" translatesAutoresizingMaskIntoConstraints="NO" id="rOb-ZR-kle">
-                                <rect key="frame" x="30" y="582.5" width="354" height="40"/>
+                                <rect key="frame" x="30" y="582.66666666666663" width="354" height="40"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJV-ce-WEQ" customClass="CustomButton" customModule="Zakerly" customModuleProvider="target">
-                                <rect key="frame" x="30" y="717.5" width="354" height="54"/>
+                                <rect key="frame" x="30" y="717.66666666666663" width="354" height="53.666666666666629"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="   Sign in with Google" image="google">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -148,19 +152,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10808" translatesAutoresizingMaskIntoConstraints="NO" id="t5r-NM-iAU">
-                                <rect key="frame" x="87" y="79" width="240" height="269"/>
+                                <rect key="frame" x="87" y="79" width="240" height="268.66666666666669"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cyj-CF-jZ1">
-                                <rect key="frame" x="131" y="59" width="152" height="71.5"/>
+                                <rect key="frame" x="131.33333333333337" y="59.000000000000007" width="151.66666666666663" height="71.666666666666686"/>
                                 <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pVj-RP-uFQ">
-                                <rect key="frame" x="30" y="289.5" width="354" height="58.5"/>
+                                <rect key="frame" x="30" y="289.66666666666669" width="354" height="58"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzG-be-nwu" customClass="CustomButton" customModule="Zakerly" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="172" height="58.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="172" height="58"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
                                         <state key="normal" title="Instructor">
@@ -168,7 +172,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPf-uB-Q8J">
-                                        <rect key="frame" x="182" y="0.0" width="172" height="58.5"/>
+                                        <rect key="frame" x="182" y="0.0" width="172" height="58"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
                                         <state key="normal" title="Student">
                                             <color key="titleColor" systemColor="systemGray2Color"/>
@@ -180,40 +184,40 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="llU-Sn-HdW">
-                                <rect key="frame" x="30" y="378" width="354" height="387"/>
+                                <rect key="frame" x="30" y="377.66666666666674" width="354" height="387.33333333333326"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FUV-OZ-dtQ" customClass="CustomTextField" customModule="Zakerly" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="354" height="44.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="45"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="50h-5H-T4x" customClass="CustomTextField" customModule="Zakerly" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="54.5" width="354" height="45"/>
+                                        <rect key="frame" x="0.0" y="55" width="354" height="44.666666666666657"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eXN-Hp-mFQ" customClass="CustomTextField" customModule="Zakerly" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="109.5" width="354" height="44.5"/>
+                                        <rect key="frame" x="0.0" y="109.66666666666663" width="354" height="45"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="64K-Ap-OI2" customClass="CustomTextField" customModule="Zakerly" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="164" width="354" height="45"/>
+                                        <rect key="frame" x="0.0" y="164.66666666666669" width="354" height="44.666666666666657"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Specialization" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OcA-45-WYT" customClass="CustomTextField" customModule="Zakerly" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="219" width="354" height="45"/>
+                                        <rect key="frame" x="0.0" y="219.33333333333331" width="354" height="44.666666666666686"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="EGP/hour" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BbL-Ol-Wgr" customClass="CustomTextField" customModule="Zakerly" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="274" width="354" height="44.5"/>
+                                        <rect key="frame" x="0.0" y="273.99999999999994" width="354" height="45"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYT-kw-g4p" customClass="CustomButton" customModule="Zakerly" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="328.5" width="354" height="58.5"/>
+                                        <rect key="frame" x="0.0" y="328.99999999999994" width="354" height="58.333333333333314"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <state key="normal" title="Sign Up">
@@ -266,19 +270,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10808" translatesAutoresizingMaskIntoConstraints="NO" id="uPn-eV-yMX">
-                                <rect key="frame" x="87" y="79" width="240" height="269"/>
+                                <rect key="frame" x="87" y="79" width="240" height="268.66666666666669"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NWG-iK-Jdw">
-                                <rect key="frame" x="131" y="59" width="152" height="71.5"/>
+                                <rect key="frame" x="131.33333333333337" y="59.000000000000007" width="151.66666666666663" height="71.666666666666686"/>
                                 <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eQu-lT-Lfz">
-                                <rect key="frame" x="30" y="289.5" width="354" height="58.5"/>
+                                <rect key="frame" x="30" y="289.66666666666669" width="354" height="58"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9wX-WJ-24S">
-                                        <rect key="frame" x="0.0" y="0.0" width="172" height="58.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="172" height="58"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
                                         <state key="normal" title="Instructor">
@@ -286,7 +290,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vub-LS-0WF" customClass="CustomButton" customModule="Zakerly" customModuleProvider="target">
-                                        <rect key="frame" x="182" y="0.0" width="172" height="58.5"/>
+                                        <rect key="frame" x="182" y="0.0" width="172" height="58"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
                                         <state key="normal" title="Student">
@@ -299,30 +303,30 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="OkR-dm-d5s">
-                                <rect key="frame" x="30" y="378" width="354" height="277"/>
+                                <rect key="frame" x="30" y="377.66666666666663" width="354" height="277.66666666666663"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="erG-ku-VQq" customClass="CustomTextField" customModule="Zakerly" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="354" height="44.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="45"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OI0-tW-vk7" customClass="CustomTextField" customModule="Zakerly" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="54.5" width="354" height="45"/>
+                                        <rect key="frame" x="0.0" y="55" width="354" height="44.666666666666657"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hK8-i0-5r1" customClass="CustomTextField" customModule="Zakerly" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="109.5" width="354" height="44.5"/>
+                                        <rect key="frame" x="0.0" y="109.66666666666663" width="354" height="45"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kzx-rD-JPI" customClass="CustomTextField" customModule="Zakerly" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="164" width="354" height="45"/>
+                                        <rect key="frame" x="0.0" y="164.66666666666669" width="354" height="44.666666666666657"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDK-qS-hpI" customClass="CustomButton" customModule="Zakerly" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="219" width="354" height="58"/>
+                                        <rect key="frame" x="0.0" y="219.33333333333331" width="354" height="58.333333333333314"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <state key="normal" title="Sign Up">
@@ -410,16 +414,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forget Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e8k-uc-y19">
-                                <rect key="frame" x="56.5" y="64" width="301" height="71.5"/>
+                                <rect key="frame" x="56.666666666666657" y="64" width="301" height="71.666666666666686"/>
                                 <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="37"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="undraw_forgot_password_gi2d" translatesAutoresizingMaskIntoConstraints="NO" id="Rj6-xs-H76">
-                                <rect key="frame" x="110" y="155.5" width="194" height="144"/>
+                                <rect key="frame" x="110" y="155.66666666666666" width="194" height="143.99999999999997"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RwI-af-jSv">
-                                <rect key="frame" x="30" y="399.5" width="354" height="58"/>
+                                <rect key="frame" x="30" y="399.33333333333331" width="354" height="58.333333333333314"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Reset Password">
@@ -427,7 +431,7 @@
                                 </state>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Email to reset Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2eb-9E-NOF" customClass="CustomTextField" customModule="Zakerly" customModuleProvider="target">
-                                <rect key="frame" x="30" y="334.5" width="354" height="45"/>
+                                <rect key="frame" x="30" y="334.66666666666669" width="354" height="44.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
@@ -475,7 +479,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favourites" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="2h3-3t-Ebd">
-                                <rect key="frame" x="138.5" y="44" width="137" height="37"/>
+                                <rect key="frame" x="138.33333333333331" y="44" width="137.33333333333331" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -515,13 +519,13 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="ncA-QS-Im4">
-                                                    <rect key="frame" x="113" y="20" width="172" height="20"/>
+                                                    <rect key="frame" x="113" y="20" width="172" height="22.666666666666671"/>
                                                     <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speciality" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g16-mr-r9p">
-                                                    <rect key="frame" x="113" y="48" width="172" height="20"/>
+                                                    <rect key="frame" x="113" y="50.666666666666664" width="172" height="22.666666666666664"/>
                                                     <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -597,18 +601,171 @@
         <!--Home-->
         <scene sceneID="Ns2-0i-J1i">
             <objects>
-                <viewController id="4sS-eA-kmS" sceneMemberID="viewController">
+                <viewController id="4sS-eA-kmS" customClass="HomeViewController" customModule="Zakerly" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Qx-IP-bFn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z42-6W-IKz">
+                                <rect key="frame" x="0.0" y="44" width="414" height="46"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zakerly" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tzU-pA-pEh">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="46"/>
+                                        <color key="backgroundColor" red="0.0" green="0.74178797009999997" blue="0.95266216989999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Italic" family="Roboto" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Q0-zL-cKp" userLabel="Search Button">
+                                        <rect key="frame" x="358.66666666666669" y="10.666666666666664" width="25.333333333333314" height="25"/>
+                                        <state key="normal" image="SEARCH"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="tzU-pA-pEh" secondAttribute="trailing" id="4cM-9M-Qgi"/>
+                                    <constraint firstItem="tzU-pA-pEh" firstAttribute="top" secondItem="Z42-6W-IKz" secondAttribute="top" id="DUK-pI-umr"/>
+                                    <constraint firstAttribute="bottom" secondItem="tzU-pA-pEh" secondAttribute="bottom" id="DsX-Q9-DwI"/>
+                                    <constraint firstItem="0Q0-zL-cKp" firstAttribute="centerY" secondItem="Z42-6W-IKz" secondAttribute="centerY" id="HGa-dY-K83"/>
+                                    <constraint firstAttribute="height" constant="46" id="Qzp-t7-KWn"/>
+                                    <constraint firstItem="tzU-pA-pEh" firstAttribute="leading" secondItem="Z42-6W-IKz" secondAttribute="leading" id="fLi-jI-Qkx"/>
+                                    <constraint firstAttribute="trailing" secondItem="0Q0-zL-cKp" secondAttribute="trailing" constant="30" id="yqa-WX-fI9"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recommended For You" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dJ-a4-Smu">
+                                <rect key="frame" x="25" y="100" width="300" height="23.333333333333329"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="8Hx-4X-9oW"/>
+                                    <constraint firstAttribute="width" constant="300" id="vqX-gS-7Hq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8Pr-Dd-N3E">
+                                <rect key="frame" x="25" y="133.33333333333334" width="389" height="150.00000000000003"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Egd-vf-tGa"/>
+                                </constraints>
+                                <inset key="scrollIndicatorInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="OAC-z2-hQC">
+                                    <size key="itemSize" width="125" height="125"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="recommendedCell" id="Dk5-kp-hSu" customClass="RecommendedCollectionViewCell" customModule="Zakerly" customModuleProvider="target">
+                                        <rect key="frame" x="5" y="13" width="212" height="124"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="pBJ-Sg-zwf">
+                                            <rect key="frame" x="0.0" y="0.0" width="212" height="124"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="212" height="124"/>
+                                        <connections>
+                                            <outlet property="backgroundView" destination="8Pr-Dd-N3E" id="FcY-9q-cGG"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Instructors" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRT-fC-jJZ">
+                                <rect key="frame" x="25" y="293.33333333333331" width="300" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="CVI-2A-2Cp"/>
+                                    <constraint firstAttribute="height" constant="27" id="kQz-Gv-DJ6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7AV-Pz-YlL" userLabel="Top Collection View">
+                                <rect key="frame" x="25" y="330.33333333333331" width="389" height="150"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <inset key="scrollIndicatorInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zqN-Sq-QWi">
+                                    <size key="itemSize" width="125" height="125"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="recommendedCell" id="KF4-G6-cFz" customClass="RecommendedCollectionViewCell" customModule="Zakerly" customModuleProvider="target">
+                                        <rect key="frame" x="5" y="13" width="212" height="124"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="xMx-RQ-SGe">
+                                            <rect key="frame" x="0.0" y="0.0" width="212" height="124"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="212" height="124"/>
+                                        <connections>
+                                            <outlet property="backgroundView" destination="7AV-Pz-YlL" id="DIH-nk-puu"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRM-WE-hDs">
+                                <rect key="frame" x="25" y="500.33333333333326" width="300" height="27"/>
+                                <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CpI-zS-Try">
+                                <rect key="frame" x="41.333333333333343" y="542.33333333333337" width="331.33333333333326" height="270.66666666666663"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="discoverCell" id="qi8-9B-WJu">
+                                        <rect key="frame" x="0.0" y="28" width="331.33333333333326" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qi8-9B-WJu" id="q3L-8U-bbu">
+                                            <rect key="frame" x="0.0" y="0.0" width="331.33333333333326" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="WdV-Fx-wSz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TRT-fC-jJZ" firstAttribute="leading" secondItem="2dJ-a4-Smu" secondAttribute="leading" id="2UQ-Po-EVF"/>
+                            <constraint firstItem="7AV-Pz-YlL" firstAttribute="top" secondItem="TRT-fC-jJZ" secondAttribute="bottom" constant="10" id="3cC-Ip-owz"/>
+                            <constraint firstItem="Z42-6W-IKz" firstAttribute="top" secondItem="WdV-Fx-wSz" secondAttribute="top" id="5x1-Oh-gsY"/>
+                            <constraint firstItem="7AV-Pz-YlL" firstAttribute="trailing" secondItem="8Pr-Dd-N3E" secondAttribute="trailing" id="8c7-Ea-21H"/>
+                            <constraint firstItem="2dJ-a4-Smu" firstAttribute="leading" secondItem="WdV-Fx-wSz" secondAttribute="leading" constant="25" id="A1i-vk-BIb"/>
+                            <constraint firstItem="8Pr-Dd-N3E" firstAttribute="leading" secondItem="WdV-Fx-wSz" secondAttribute="leading" constant="25" id="C0X-bh-rnU"/>
+                            <constraint firstItem="8Pr-Dd-N3E" firstAttribute="top" secondItem="2dJ-a4-Smu" secondAttribute="bottom" constant="10" id="Cqf-dO-Pcs"/>
+                            <constraint firstItem="7AV-Pz-YlL" firstAttribute="leading" secondItem="8Pr-Dd-N3E" secondAttribute="leading" id="EGz-cS-PMY"/>
+                            <constraint firstItem="Z42-6W-IKz" firstAttribute="trailing" secondItem="WdV-Fx-wSz" secondAttribute="trailing" id="Gnn-UF-GzV"/>
+                            <constraint firstItem="Z42-6W-IKz" firstAttribute="leading" secondItem="WdV-Fx-wSz" secondAttribute="leading" id="MVW-n4-7Zw"/>
+                            <constraint firstItem="TRT-fC-jJZ" firstAttribute="top" secondItem="8Pr-Dd-N3E" secondAttribute="bottom" constant="10" id="NZW-R2-Szy"/>
+                            <constraint firstItem="CpI-zS-Try" firstAttribute="centerX" secondItem="2Qx-IP-bFn" secondAttribute="centerX" id="O83-7j-fT3"/>
+                            <constraint firstItem="WdV-Fx-wSz" firstAttribute="trailing" secondItem="8Pr-Dd-N3E" secondAttribute="trailing" id="Qp3-x6-Skc"/>
+                            <constraint firstItem="gRM-WE-hDs" firstAttribute="width" secondItem="TRT-fC-jJZ" secondAttribute="width" id="Rtl-YB-ddt"/>
+                            <constraint firstItem="CpI-zS-Try" firstAttribute="top" secondItem="gRM-WE-hDs" secondAttribute="bottom" constant="15" id="SH5-Y5-pdr"/>
+                            <constraint firstItem="gRM-WE-hDs" firstAttribute="top" secondItem="7AV-Pz-YlL" secondAttribute="bottom" constant="20" id="U6v-5h-gT3"/>
+                            <constraint firstItem="gRM-WE-hDs" firstAttribute="height" secondItem="TRT-fC-jJZ" secondAttribute="height" id="bbV-7h-74q"/>
+                            <constraint firstItem="2dJ-a4-Smu" firstAttribute="top" secondItem="Z42-6W-IKz" secondAttribute="bottom" constant="10" id="cGE-8e-y5o"/>
+                            <constraint firstItem="7AV-Pz-YlL" firstAttribute="height" secondItem="8Pr-Dd-N3E" secondAttribute="height" id="ewP-F6-euA"/>
+                            <constraint firstItem="CpI-zS-Try" firstAttribute="bottom" secondItem="WdV-Fx-wSz" secondAttribute="bottom" id="l19-tg-X5f"/>
+                            <constraint firstItem="gRM-WE-hDs" firstAttribute="leading" secondItem="TRT-fC-jJZ" secondAttribute="leading" id="qVh-UQ-rUp"/>
+                            <constraint firstItem="7AV-Pz-YlL" firstAttribute="width" secondItem="8Pr-Dd-N3E" secondAttribute="width" id="uHc-lL-uRY"/>
+                            <constraint firstItem="CpI-zS-Try" firstAttribute="width" secondItem="2Qx-IP-bFn" secondAttribute="width" multiplier="0.8" id="yMF-Hv-UIc"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="Icon feather-home" id="jfo-Sr-kxi"/>
+                    <connections>
+                        <outlet property="discoverTableView" destination="CpI-zS-Try" id="JCl-Zk-JaR"/>
+                        <outlet property="recommendedCollectionView" destination="8Pr-Dd-N3E" id="qqc-RF-RnN"/>
+                        <outlet property="topCollectionView" destination="7AV-Pz-YlL" id="vvu-LB-uBL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Obj-aL-iXS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="899" y="909"/>
+            <point key="canvasLocation" x="898.55072463768124" y="908.70535714285711"/>
         </scene>
         <!--Notifications-->
         <scene sceneID="fjp-cN-07D">
@@ -635,7 +792,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bxU-no-rFl">
-                                <rect key="frame" x="149.5" y="119" width="115" height="115"/>
+                                <rect key="frame" x="149.66666666666666" y="119" width="114.99999999999997" height="115"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="115" id="4wK-nj-yW5"/>
                                     <constraint firstAttribute="width" secondItem="bxU-no-rFl" secondAttribute="height" multiplier="1:1" id="u2R-gW-HdJ"/>
@@ -648,7 +805,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVQ-gF-SX9" userLabel="Set Profile Photo">
-                                <rect key="frame" x="221.5" y="176" width="58" height="58"/>
+                                <rect key="frame" x="221.66666666666666" y="176" width="57.999999999999972" height="58"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" image="Cameraa"/>
                                 <connections>
@@ -659,31 +816,31 @@
                                 <rect key="frame" x="50" y="305" width="314" height="37"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bw4-ep-pfk">
-                                        <rect key="frame" x="0.0" y="0.0" width="49.5" height="37"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="49.333333333333336" height="37"/>
                                         <state key="normal" title="Button" image="Chat"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mkY-Kn-3kr">
-                                        <rect key="frame" x="88.5" y="0.0" width="49" height="37"/>
+                                        <rect key="frame" x="88.333333333333343" y="0.0" width="49.333333333333343" height="37"/>
                                         <state key="normal" title="Button" image="Video"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rvm-SH-ldb">
-                                        <rect key="frame" x="176.5" y="0.0" width="49.5" height="37"/>
+                                        <rect key="frame" x="176.66666666666666" y="0.0" width="49" height="37"/>
                                         <state key="normal" image="edit-interface-symbol"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4dQ-JP-FpD">
-                                        <rect key="frame" x="265" y="0.0" width="49" height="37"/>
+                                        <rect key="frame" x="264.66666666666669" y="0.0" width="49.333333333333314" height="37"/>
                                         <state key="normal" title="Button" image="Event"/>
                                     </button>
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Teachers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="zL5-1d-8rh">
-                                <rect key="frame" x="128" y="372" width="158.5" height="33"/>
+                                <rect key="frame" x="125.66666666666669" y="372" width="163" height="37.333333333333314"/>
                                 <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="28"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Mo-hL-u3i">
-                                <rect key="frame" x="27" y="425" width="360" height="388"/>
+                                <rect key="frame" x="27" y="429.33333333333326" width="360" height="383.66666666666674"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="myTeachersCell" rowHeight="152" id="bUU-is-rPQ" customClass="FavouritesTableViewCell" customModule="Zakerly" customModuleProvider="target">
@@ -742,18 +899,19 @@
         <image name="Chat" width="35" height="35"/>
         <image name="Event" width="35" height="33"/>
         <image name="Group 33" width="286" height="40"/>
-        <image name="Icon feather-home" width="21.5" height="20"/>
+        <image name="Icon feather-home" width="21.333333969116211" height="19.666666030883789"/>
         <image name="Icon feather-settings" width="28" height="28"/>
-        <image name="Icon ionic-ios-notifications" width="20.5" height="23.5"/>
-        <image name="Icon material-account-circle" width="23.5" height="21.5"/>
-        <image name="Icon material-favorite-border" width="23.5" height="21.5"/>
+        <image name="Icon ionic-ios-notifications" width="20.666666030883789" height="23.666666030883789"/>
+        <image name="Icon material-account-circle" width="23.333333969116211" height="21.666666030883789"/>
+        <image name="Icon material-favorite-border" width="23.333333969116211" height="21.666666030883789"/>
+        <image name="SEARCH" width="25.333333969116211" height="25"/>
         <image name="Video" width="37" height="37"/>
         <image name="arrowshape.turn.up.left.circle" catalog="system" width="128" height="121"/>
         <image name="edit-interface-symbol" width="35" height="35"/>
         <image name="google" width="33" height="33"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <image name="undraw_Login_re_4vu2" width="307" height="188"/>
-        <image name="undraw_forgot_password_gi2d" width="194" height="143.5"/>
+        <image name="undraw_forgot_password_gi2d" width="193.66667175292969" height="143.33332824707031"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

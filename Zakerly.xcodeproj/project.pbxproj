@@ -21,6 +21,9 @@
 		A63FB7B326839AEA001F14FE /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63FB7B226839AEA001F14FE /* FavouritesViewController.swift */; };
 		A63FB7BB2683C93E001F14FE /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63FB7BA2683C93E001F14FE /* CustomButton.swift */; };
 		A63FB7DF2684113A001F14FE /* StudentProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63FB7DE2684113A001F14FE /* StudentProfileVC.swift */; };
+		A6A578C826855FFA000EEEC2 /* RecommendedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A578C626855FFA000EEEC2 /* RecommendedCollectionViewCell.swift */; };
+		A6A578C926855FFA000EEEC2 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6A578C726855FFA000EEEC2 /* CollectionViewCell.xib */; };
+		A6A578D12685689A000EEEC2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A578D02685689A000EEEC2 /* HomeViewController.swift */; };
 		A6B70C7F26815D4E004F4BB4 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B70C7E26815D4E004F4BB4 /* CustomTextField.swift */; };
 		A6E81E3E2682CF69006FF584 /* SignUpInstructorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E81E3D2682CF69006FF584 /* SignUpInstructorViewController.swift */; };
 		A6E81E462682CF8A006FF584 /* SignUpStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E81E452682CF8A006FF584 /* SignUpStudentViewController.swift */; };
@@ -77,6 +80,21 @@
 		A63FB7CD26840BDE001F14FE /* Segoe UI Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Segoe UI Bold.ttf"; sourceTree = "<group>"; };
 		A63FB7CE26840BE0001F14FE /* Segoe UI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Segoe UI.ttf"; sourceTree = "<group>"; };
 		A63FB7DE2684113A001F14FE /* StudentProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentProfileVC.swift; sourceTree = "<group>"; };
+		A6A578B726855833000EEEC2 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-BlackItalic.ttf"; path = "../../../../Downloads/Roboto-1/Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		A6A578B826855833000EEEC2 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Medium.ttf"; path = "../../../../Downloads/Roboto-1/Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		A6A578B926855833000EEEC2 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-MediumItalic.ttf"; path = "../../../../Downloads/Roboto-1/Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		A6A578BA26855833000EEEC2 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Black.ttf"; path = "../../../../Downloads/Roboto-1/Roboto-Black.ttf"; sourceTree = "<group>"; };
+		A6A578BB26855833000EEEC2 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Light.ttf"; path = "../../../../Downloads/Roboto-1/Roboto-Light.ttf"; sourceTree = "<group>"; };
+		A6A578BC26855833000EEEC2 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Bold.ttf"; path = "../../../../Downloads/Roboto-1/Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		A6A578BD26855834000EEEC2 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-BoldItalic.ttf"; path = "../../../../Downloads/Roboto-1/Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		A6A578BE26855834000EEEC2 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-ThinItalic.ttf"; path = "../../../../Downloads/Roboto-1/Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		A6A578BF26855834000EEEC2 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Thin.ttf"; path = "../../../../Downloads/Roboto-1/Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		A6A578C026855834000EEEC2 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-LightItalic.ttf"; path = "../../../../Downloads/Roboto-1/Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		A6A578C126855834000EEEC2 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "../../../../Downloads/Roboto-1/Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		A6A578C226855834000EEEC2 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Italic.ttf"; path = "../../../../Downloads/Roboto-1/Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		A6A578C626855FFA000EEEC2 /* RecommendedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedCollectionViewCell.swift; sourceTree = "<group>"; };
+		A6A578C726855FFA000EEEC2 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		A6A578D02685689A000EEEC2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A6B70C7E26815D4E004F4BB4 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		A6E81E3D2682CF69006FF584 /* SignUpInstructorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInstructorViewController.swift; sourceTree = "<group>"; };
 		A6E81E452682CF8A006FF584 /* SignUpStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpStudentViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +149,8 @@
 			children = (
 				A63FB7AB2683883F001F14FE /* FavouritesTableViewCell.swift */,
 				A63FB7AC2683883F001F14FE /* FavouritesTableViewCell.xib */,
+				A6A578C626855FFA000EEEC2 /* RecommendedCollectionViewCell.swift */,
+				A6A578C726855FFA000EEEC2 /* CollectionViewCell.xib */,
 				A622EB6C267FE7B300A289C7 /* Zakerly */,
 				A622EB83267FE7B600A289C7 /* ZakerlyTests */,
 				A622EB8E267FE7B600A289C7 /* ZakerlyUITests */,
@@ -204,6 +224,18 @@
 		A63FB7CA26840BD0001F14FE /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				A6A578BA26855833000EEEC2 /* Roboto-Black.ttf */,
+				A6A578B726855833000EEEC2 /* Roboto-BlackItalic.ttf */,
+				A6A578BC26855833000EEEC2 /* Roboto-Bold.ttf */,
+				A6A578BD26855834000EEEC2 /* Roboto-BoldItalic.ttf */,
+				A6A578C226855834000EEEC2 /* Roboto-Italic.ttf */,
+				A6A578BB26855833000EEEC2 /* Roboto-Light.ttf */,
+				A6A578C026855834000EEEC2 /* Roboto-LightItalic.ttf */,
+				A6A578B826855833000EEEC2 /* Roboto-Medium.ttf */,
+				A6A578B926855833000EEEC2 /* Roboto-MediumItalic.ttf */,
+				A6A578C126855834000EEEC2 /* Roboto-Regular.ttf */,
+				A6A578BF26855834000EEEC2 /* Roboto-Thin.ttf */,
+				A6A578BE26855834000EEEC2 /* Roboto-ThinItalic.ttf */,
 				A63FB7CE26840BE0001F14FE /* Segoe UI.ttf */,
 				A63FB7CD26840BDE001F14FE /* Segoe UI Bold.ttf */,
 				A63FB7CC26840BDC001F14FE /* Segoe UI Bold Italic.ttf */,
@@ -219,6 +251,7 @@
 				A6E81E3D2682CF69006FF584 /* SignUpInstructorViewController.swift */,
 				A6E81E452682CF8A006FF584 /* SignUpStudentViewController.swift */,
 				A6E81E4A2682CFA0006FF584 /* ForgetPasswordViewController.swift */,
+				A6A578D02685689A000EEEC2 /* HomeViewController.swift */,
 				A63FB7B226839AEA001F14FE /* FavouritesViewController.swift */,
 				A63FB7DE2684113A001F14FE /* StudentProfileVC.swift */,
 			);
@@ -347,6 +380,7 @@
 				A622EB77267FE7B600A289C7 /* Assets.xcassets in Resources */,
 				A622EB75267FE7B300A289C7 /* Main.storyboard in Resources */,
 				A63FB7AE2683883F001F14FE /* FavouritesTableViewCell.xib in Resources */,
+				A6A578C926855FFA000EEEC2 /* CollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +510,7 @@
 			files = (
 				A63FB7B326839AEA001F14FE /* FavouritesViewController.swift in Sources */,
 				A6B70C7F26815D4E004F4BB4 /* CustomTextField.swift in Sources */,
+				A6A578C826855FFA000EEEC2 /* RecommendedCollectionViewCell.swift in Sources */,
 				A6E81E3E2682CF69006FF584 /* SignUpInstructorViewController.swift in Sources */,
 				A622EB72267FE7B300A289C7 /* LoginViewController.swift in Sources */,
 				A63FB7DF2684113A001F14FE /* StudentProfileVC.swift in Sources */,
@@ -484,6 +519,7 @@
 				A622EB6E267FE7B300A289C7 /* AppDelegate.swift in Sources */,
 				A6E81E4B2682CFA0006FF584 /* ForgetPasswordViewController.swift in Sources */,
 				A6E81E462682CF8A006FF584 /* SignUpStudentViewController.swift in Sources */,
+				A6A578D12685689A000EEEC2 /* HomeViewController.swift in Sources */,
 				A622EB70267FE7B300A289C7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
