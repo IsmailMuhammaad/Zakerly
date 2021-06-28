@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CustomTextField: UITextField {
+class CustomTextField: UITextField, UITextFieldDelegate {
 
     override func awakeFromNib() {
         layer.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
@@ -18,6 +18,18 @@ class CustomTextField: UITextField {
         layer.cornerRadius = 5
         layer.masksToBounds = false
         
+        delegate = self
+        
+        
     }
 
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        textField.delegate = self
+        
+        textField.resignFirstResponder()
+
+        return true
+    }
+    
 }

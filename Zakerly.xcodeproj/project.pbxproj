@@ -10,7 +10,6 @@
 		1DAF672D3261838E26E27356 /* Pods_Zakerly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93EBF8EF4C79AF7FB97825ED /* Pods_Zakerly.framework */; };
 		A622EB6E267FE7B300A289C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A622EB6D267FE7B300A289C7 /* AppDelegate.swift */; };
 		A622EB70267FE7B300A289C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A622EB6F267FE7B300A289C7 /* SceneDelegate.swift */; };
-		A622EB72267FE7B300A289C7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A622EB71267FE7B300A289C7 /* LoginViewController.swift */; };
 		A622EB75267FE7B300A289C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A622EB73267FE7B300A289C7 /* Main.storyboard */; };
 		A622EB77267FE7B600A289C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A622EB76267FE7B600A289C7 /* Assets.xcassets */; };
 		A622EB7A267FE7B600A289C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A622EB78267FE7B600A289C7 /* LaunchScreen.storyboard */; };
@@ -24,6 +23,10 @@
 		A6A578C826855FFA000EEEC2 /* RecommendedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A578C626855FFA000EEEC2 /* RecommendedCollectionViewCell.swift */; };
 		A6A578C926855FFA000EEEC2 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6A578C726855FFA000EEEC2 /* CollectionViewCell.xib */; };
 		A6A578D12685689A000EEEC2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A578D02685689A000EEEC2 /* HomeViewController.swift */; };
+		A6A830ED2689A07C00A8A795 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6A830EC2689A07C00A8A795 /* GoogleService-Info.plist */; };
+		A6AFC3F92689C93500EE2E41 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AFC3F82689C93500EE2E41 /* LoginViewController.swift */; };
+		A6AFC3FE2689D5E400EE2E41 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AFC3FD2689D5E400EE2E41 /* SettingsViewController.swift */; };
+		A6AFC41A2689FA9600EE2E41 /* StudentTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AFC4192689FA9600EE2E41 /* StudentTabBarController.swift */; };
 		A6B70C7F26815D4E004F4BB4 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B70C7E26815D4E004F4BB4 /* CustomTextField.swift */; };
 		A6E81E3E2682CF69006FF584 /* SignUpInstructorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E81E3D2682CF69006FF584 /* SignUpInstructorViewController.swift */; };
 		A6E81E462682CF8A006FF584 /* SignUpStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E81E452682CF8A006FF584 /* SignUpStudentViewController.swift */; };
@@ -60,7 +63,6 @@
 		A622EB6A267FE7B300A289C7 /* Zakerly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zakerly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A622EB6D267FE7B300A289C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A622EB6F267FE7B300A289C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A622EB71267FE7B300A289C7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A622EB74267FE7B300A289C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A622EB76267FE7B600A289C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A622EB79267FE7B600A289C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -95,6 +97,10 @@
 		A6A578C626855FFA000EEEC2 /* RecommendedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedCollectionViewCell.swift; sourceTree = "<group>"; };
 		A6A578C726855FFA000EEEC2 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		A6A578D02685689A000EEEC2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A6A830EC2689A07C00A8A795 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A6AFC3F82689C93500EE2E41 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A6AFC3FD2689D5E400EE2E41 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		A6AFC4192689FA9600EE2E41 /* StudentTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTabBarController.swift; sourceTree = "<group>"; };
 		A6B70C7E26815D4E004F4BB4 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		A6E81E3D2682CF69006FF584 /* SignUpInstructorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInstructorViewController.swift; sourceTree = "<group>"; };
 		A6E81E452682CF8A006FF584 /* SignUpStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpStudentViewController.swift; sourceTree = "<group>"; };
@@ -183,6 +189,7 @@
 				A622EB76267FE7B600A289C7 /* Assets.xcassets */,
 				A622EB78267FE7B600A289C7 /* LaunchScreen.storyboard */,
 				A622EB7B267FE7B600A289C7 /* Info.plist */,
+				A6A830EC2689A07C00A8A795 /* GoogleService-Info.plist */,
 				A63FB7CA26840BD0001F14FE /* Fonts */,
 			);
 			path = Zakerly;
@@ -247,13 +254,15 @@
 		A6E81E3C2682CF2C006FF584 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				A622EB71267FE7B300A289C7 /* LoginViewController.swift */,
 				A6E81E3D2682CF69006FF584 /* SignUpInstructorViewController.swift */,
 				A6E81E452682CF8A006FF584 /* SignUpStudentViewController.swift */,
 				A6E81E4A2682CFA0006FF584 /* ForgetPasswordViewController.swift */,
 				A6A578D02685689A000EEEC2 /* HomeViewController.swift */,
 				A63FB7B226839AEA001F14FE /* FavouritesViewController.swift */,
 				A63FB7DE2684113A001F14FE /* StudentProfileVC.swift */,
+				A6AFC3F82689C93500EE2E41 /* LoginViewController.swift */,
+				A6AFC3FD2689D5E400EE2E41 /* SettingsViewController.swift */,
+				A6AFC4192689FA9600EE2E41 /* StudentTabBarController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -279,7 +288,7 @@
 				A622EB66267FE7B300A289C7 /* Sources */,
 				A622EB67267FE7B300A289C7 /* Frameworks */,
 				A622EB68267FE7B300A289C7 /* Resources */,
-				AE2DA6D07A256E817DC7DD26 /* [CP] Embed Pods Frameworks */,
+				149F1840B9FE8B5010BB90C6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -317,7 +326,7 @@
 				A622EB87267FE7B600A289C7 /* Sources */,
 				A622EB88267FE7B600A289C7 /* Frameworks */,
 				A622EB89267FE7B600A289C7 /* Resources */,
-				49D93613AE2824892BE9E7F5 /* [CP] Embed Pods Frameworks */,
+				EFEAD14A1FFBD23D00DC35D4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -381,6 +390,7 @@
 				A622EB75267FE7B300A289C7 /* Main.storyboard in Resources */,
 				A63FB7AE2683883F001F14FE /* FavouritesTableViewCell.xib in Resources */,
 				A6A578C926855FFA000EEEC2 /* CollectionViewCell.xib in Resources */,
+				A6A830ED2689A07C00A8A795 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +411,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		149F1840B9FE8B5010BB90C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zakerly/Pods-Zakerly-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zakerly/Pods-Zakerly-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Zakerly/Pods-Zakerly-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3C908A696136626687D17E75 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -421,40 +448,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		49D93613AE2824892BE9E7F5 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Zakerly-ZakerlyUITests/Pods-Zakerly-ZakerlyUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Zakerly-ZakerlyUITests/Pods-Zakerly-ZakerlyUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Zakerly-ZakerlyUITests/Pods-Zakerly-ZakerlyUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AE2DA6D07A256E817DC7DD26 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Zakerly/Pods-Zakerly-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Zakerly/Pods-Zakerly-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Zakerly/Pods-Zakerly-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D93CB49B83121B76DB3C3A99 /* [CP] Check Pods Manifest.lock */ = {
@@ -501,6 +494,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		EFEAD14A1FFBD23D00DC35D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zakerly-ZakerlyUITests/Pods-Zakerly-ZakerlyUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zakerly-ZakerlyUITests/Pods-Zakerly-ZakerlyUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Zakerly-ZakerlyUITests/Pods-Zakerly-ZakerlyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -512,14 +522,16 @@
 				A6B70C7F26815D4E004F4BB4 /* CustomTextField.swift in Sources */,
 				A6A578C826855FFA000EEEC2 /* RecommendedCollectionViewCell.swift in Sources */,
 				A6E81E3E2682CF69006FF584 /* SignUpInstructorViewController.swift in Sources */,
-				A622EB72267FE7B300A289C7 /* LoginViewController.swift in Sources */,
 				A63FB7DF2684113A001F14FE /* StudentProfileVC.swift in Sources */,
+				A6AFC41A2689FA9600EE2E41 /* StudentTabBarController.swift in Sources */,
 				A63FB7BB2683C93E001F14FE /* CustomButton.swift in Sources */,
 				A63FB7AD2683883F001F14FE /* FavouritesTableViewCell.swift in Sources */,
 				A622EB6E267FE7B300A289C7 /* AppDelegate.swift in Sources */,
 				A6E81E4B2682CFA0006FF584 /* ForgetPasswordViewController.swift in Sources */,
+				A6AFC3FE2689D5E400EE2E41 /* SettingsViewController.swift in Sources */,
 				A6E81E462682CF8A006FF584 /* SignUpStudentViewController.swift in Sources */,
 				A6A578D12685689A000EEEC2 /* HomeViewController.swift in Sources */,
+				A6AFC3F92689C93500EE2E41 /* LoginViewController.swift in Sources */,
 				A622EB70267FE7B300A289C7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
