@@ -15,6 +15,7 @@
 		A622EB7A267FE7B600A289C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A622EB78267FE7B600A289C7 /* LaunchScreen.storyboard */; };
 		A622EB85267FE7B600A289C7 /* ZakerlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A622EB84267FE7B600A289C7 /* ZakerlyTests.swift */; };
 		A622EB90267FE7B600A289C7 /* ZakerlyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A622EB8F267FE7B600A289C7 /* ZakerlyUITests.swift */; };
+		A63D9EA0268AAB8200E61780 /* IconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D9E9F268AAB8200E61780 /* IconButton.swift */; };
 		A63FB7AD2683883F001F14FE /* FavouritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63FB7AB2683883F001F14FE /* FavouritesTableViewCell.swift */; };
 		A63FB7AE2683883F001F14FE /* FavouritesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A63FB7AC2683883F001F14FE /* FavouritesTableViewCell.xib */; };
 		A63FB7B326839AEA001F14FE /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63FB7B226839AEA001F14FE /* FavouritesViewController.swift */; };
@@ -73,6 +74,7 @@
 		A622EB8B267FE7B600A289C7 /* ZakerlyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZakerlyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A622EB8F267FE7B600A289C7 /* ZakerlyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZakerlyUITests.swift; sourceTree = "<group>"; };
 		A622EB91267FE7B600A289C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A63D9E9F268AAB8200E61780 /* IconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButton.swift; sourceTree = "<group>"; };
 		A63FB7AB2683883F001F14FE /* FavouritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesTableViewCell.swift; sourceTree = "<group>"; };
 		A63FB7AC2683883F001F14FE /* FavouritesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouritesTableViewCell.xib; sourceTree = "<group>"; };
 		A63FB7B226839AEA001F14FE /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
@@ -153,10 +155,6 @@
 		A622EB61267FE7B300A289C7 = {
 			isa = PBXGroup;
 			children = (
-				A63FB7AB2683883F001F14FE /* FavouritesTableViewCell.swift */,
-				A63FB7AC2683883F001F14FE /* FavouritesTableViewCell.xib */,
-				A6A578C626855FFA000EEEC2 /* RecommendedCollectionViewCell.swift */,
-				A6A578C726855FFA000EEEC2 /* CollectionViewCell.xib */,
 				A622EB6C267FE7B300A289C7 /* Zakerly */,
 				A622EB83267FE7B600A289C7 /* ZakerlyTests */,
 				A622EB8E267FE7B600A289C7 /* ZakerlyUITests */,
@@ -181,8 +179,6 @@
 			children = (
 				A622EB6D267FE7B300A289C7 /* AppDelegate.swift */,
 				A622EB6F267FE7B300A289C7 /* SceneDelegate.swift */,
-				A63FB7BA2683C93E001F14FE /* CustomButton.swift */,
-				A6B70C7E26815D4E004F4BB4 /* CustomTextField.swift */,
 				A63FB79E26837C0E001F14FE /* Models */,
 				A6E81E3C2682CF2C006FF584 /* Controllers */,
 				A63FB79F26837C1C001F14FE /* Views */,
@@ -216,6 +212,13 @@
 		A63FB79E26837C0E001F14FE /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A63FB7BA2683C93E001F14FE /* CustomButton.swift */,
+				A6B70C7E26815D4E004F4BB4 /* CustomTextField.swift */,
+				A63FB7AB2683883F001F14FE /* FavouritesTableViewCell.swift */,
+				A6A578C626855FFA000EEEC2 /* RecommendedCollectionViewCell.swift */,
+				A63FB7AC2683883F001F14FE /* FavouritesTableViewCell.xib */,
+				A6A578C726855FFA000EEEC2 /* CollectionViewCell.xib */,
+				A63D9E9F268AAB8200E61780 /* IconButton.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -518,6 +521,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A63D9EA0268AAB8200E61780 /* IconButton.swift in Sources */,
 				A63FB7B326839AEA001F14FE /* FavouritesViewController.swift in Sources */,
 				A6B70C7F26815D4E004F4BB4 /* CustomTextField.swift in Sources */,
 				A6A578C826855FFA000EEEC2 /* RecommendedCollectionViewCell.swift in Sources */,
