@@ -27,8 +27,10 @@ class FavouritesTableViewCell: UITableViewCell {
         shadowView.layer.shadowColor = UIColor.black.cgColor
         shadowView.layer.shadowOpacity = 0.5
         shadowView.layer.shadowRadius = 5
-        instructorImage.layer.cornerRadius = instructorImage.frame.width/2
         instructorImage.layer.masksToBounds = true
+   
+        instructorImage.layer.cornerRadius = instructorImage.frame.height/2
+        instructorImage.clipsToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

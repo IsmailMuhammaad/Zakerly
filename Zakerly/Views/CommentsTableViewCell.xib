@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Segoe UI.ttf">
+            <string>SegoeUI</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="commentCell" rowHeight="189" id="KGk-i7-Jjw" customClass="CommentsTableViewCell" customModule="Zakerly" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="302" height="174"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="302" height="174"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="enG-A7-TKp">
+                        <rect key="frame" x="0.0" y="35" width="302" height="139"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hJ4-tE-tsO" userLabel="Main Background">
+                                <rect key="frame" x="5" y="0.0" width="292" height="134"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5mp-lv-Gsz" userLabel="Shadow View">
+                                <rect key="frame" x="5" y="0.0" width="292" height="134"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cV1-es-UDQ" customClass="CosmosView" customModule="Cosmos">
+                                <rect key="frame" x="98.5" y="30" width="105" height="29"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                        <real key="value" value="17"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                        <color key="value" name="AccentColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyColor">
+                                        <color key="value" red="0.60360914470000004" green="0.60023844240000002" blue="0.60007047650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comment" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="v0Y-VN-cUH">
+                                <rect key="frame" x="10" y="64" width="282" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Cz4-Xb-G2U"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hJ4-tE-tsO" secondAttribute="trailing" constant="5" id="FNm-SM-jC7"/>
+                            <constraint firstItem="5mp-lv-Gsz" firstAttribute="top" secondItem="enG-A7-TKp" secondAttribute="top" id="Kbs-it-Nkd"/>
+                            <constraint firstAttribute="trailing" secondItem="v0Y-VN-cUH" secondAttribute="trailing" constant="10" id="L0F-s2-fMY"/>
+                            <constraint firstItem="cV1-es-UDQ" firstAttribute="centerX" secondItem="enG-A7-TKp" secondAttribute="centerX" id="PBM-JL-yBS"/>
+                            <constraint firstItem="v0Y-VN-cUH" firstAttribute="top" secondItem="cV1-es-UDQ" secondAttribute="bottom" constant="5" id="PrB-1W-8nJ"/>
+                            <constraint firstItem="hJ4-tE-tsO" firstAttribute="leading" secondItem="enG-A7-TKp" secondAttribute="leading" constant="5" id="PyI-me-GoA"/>
+                            <constraint firstAttribute="bottom" secondItem="5mp-lv-Gsz" secondAttribute="bottom" constant="5" id="XZe-iL-wl2"/>
+                            <constraint firstItem="hJ4-tE-tsO" firstAttribute="top" secondItem="enG-A7-TKp" secondAttribute="top" id="c71-kT-gNU"/>
+                            <constraint firstAttribute="trailing" secondItem="5mp-lv-Gsz" secondAttribute="trailing" constant="5" id="fQe-oL-3Bd"/>
+                            <constraint firstItem="v0Y-VN-cUH" firstAttribute="leading" secondItem="enG-A7-TKp" secondAttribute="leading" constant="10" id="jjQ-yA-Eyx"/>
+                            <constraint firstAttribute="bottom" secondItem="hJ4-tE-tsO" secondAttribute="bottom" constant="5" id="ouM-Cc-O1a"/>
+                            <constraint firstItem="5mp-lv-Gsz" firstAttribute="leading" secondItem="enG-A7-TKp" secondAttribute="leading" constant="5" id="sBe-0U-qPD"/>
+                            <constraint firstAttribute="bottom" secondItem="v0Y-VN-cUH" secondAttribute="bottom" constant="15" id="x85-Mj-k0C"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img2" translatesAutoresizingMaskIntoConstraints="NO" id="krB-04-Kle" customClass="RoundedImage" customModule="Zakerly" customModuleProvider="target">
+                        <rect key="frame" x="126" y="10" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="2Yx-oG-gil"/>
+                            <constraint firstAttribute="width" constant="50" id="8qv-Ow-vyT"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="enG-A7-TKp" secondAttribute="bottom" id="0H0-74-D7O"/>
+                    <constraint firstAttribute="trailing" secondItem="enG-A7-TKp" secondAttribute="trailing" id="HJ4-j0-Om1"/>
+                    <constraint firstItem="enG-A7-TKp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="35" id="IHr-Jz-Chv"/>
+                    <constraint firstItem="cV1-es-UDQ" firstAttribute="top" secondItem="krB-04-Kle" secondAttribute="bottom" constant="5" id="Tmb-k8-Qby"/>
+                    <constraint firstItem="enG-A7-TKp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="e8D-GS-WUD"/>
+                    <constraint firstItem="krB-04-Kle" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="kc0-HM-Wuc"/>
+                    <constraint firstItem="enG-A7-TKp" firstAttribute="top" secondItem="krB-04-Kle" secondAttribute="bottom" constant="-25" id="wfV-0o-RNo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="comment" destination="v0Y-VN-cUH" id="xBf-na-TBi"/>
+                <outlet property="commenterPhoto" destination="krB-04-Kle" id="J5Q-tq-9gU"/>
+                <outlet property="cosmosView" destination="cV1-es-UDQ" id="h2Q-WR-S8O"/>
+                <outlet property="mainBackground" destination="hJ4-tE-tsO" id="gTB-ZM-Qb2"/>
+                <outlet property="shadowView" destination="5mp-lv-Gsz" id="bj4-NC-wpo"/>
+            </connections>
+            <point key="canvasLocation" x="-165.21739130434784" y="164.0625"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="cV1-es-UDQ">
+            <size key="intrinsicContentSize" width="105" height="17"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="img2" width="960" height="1280"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

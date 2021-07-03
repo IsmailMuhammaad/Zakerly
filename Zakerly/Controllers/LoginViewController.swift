@@ -7,14 +7,39 @@
 
 import UIKit
 import Firebase
+import GoogleSignIn
+import FBSDKCoreKit
+import FBSDKLoginKit
 class LoginViewController: UIViewController {
+   /* func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
+      if let error = error {
+        print(error.localizedDescription)
+        return
+      }
+        let credential = FacebookAuthProvider.credential(withAccessToken: AccessToken.current!.tokenString)
+    }
+    
+    func loginButtonDidLogOut(_ loginButton: FBLoginButton) {
+        print("logged out")
+    }*/
+    
 
     @IBOutlet var emailTF: CustomTextField!
     @IBOutlet var passwordTF: CustomTextField!
+    @IBOutlet weak var signInWithGoogleBtn: GIDSignInButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-    }
+        GIDSignIn.sharedInstance()?.presentingViewController = self
+       // signInWithFacebookBtn.delegate = self
+        if( GIDSignIn.sharedInstance()?.currentUser != nil ){
+            self.performSegue(withIdentifier: "goToStudentHome", sender: self)
+            // Signed in
+        }
+            else {
+                GIDSignIn.sharedInstance().signIn()
+            }
+        }
+    
 
     @IBAction func signInPressed(_ sender: Any) {
         
@@ -45,7 +70,8 @@ class LoginViewController: UIViewController {
     
     @IBAction func signInGooglePressed(_ sender: Any) {
         
-    }
+ }
+
     
     
 }

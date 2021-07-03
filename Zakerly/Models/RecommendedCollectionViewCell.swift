@@ -25,8 +25,9 @@ class RecommendedCollectionViewCell: UICollectionViewCell {
         layer.shadowOpacity = 0.5
         layer.shadowRadius = 5
     
-        instructorImage.layer.cornerRadius = instructorImage.frame.width/2
         instructorImage.layer.masksToBounds = true
+        instructorImage.layer.cornerRadius = instructorImage.frame.height/2
+        instructorImage.clipsToBounds = true
     }
 
 
