@@ -17,7 +17,9 @@ class HomeViewController: UIViewController,UICollectionViewDelegate,UICollection
    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationItem.hidesBackButton = true
+        navigationController?.isNavigationBarHidden = true
+        
         discoverTableView.register(UINib(nibName: "FavouritesTableViewCell", bundle: nil), forCellReuseIdentifier: "discoverCell")
         recommendedCollectionView.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "recommendedCell")
         topCollectionView.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "recommendedCell")

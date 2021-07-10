@@ -17,6 +17,8 @@ class StudentProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSo
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.hidesBackButton = true
+        navigationController?.isNavigationBarHidden = true
         myTeachersTableView.register(UINib(nibName: "FavouritesTableViewCell", bundle: nil), forCellReuseIdentifier: "myTeachersCell")
         studentName.text = "Ismail Muhammad"
         studentPhoto.layer.cornerRadius = studentPhoto.frame.width/2

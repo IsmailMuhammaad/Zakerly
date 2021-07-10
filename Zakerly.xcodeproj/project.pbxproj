@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1DAF672D3261838E26E27356 /* Pods_Zakerly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93EBF8EF4C79AF7FB97825ED /* Pods_Zakerly.framework */; };
 		A6097D8A268F1A96004F2F0C /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6097D89268F1A96004F2F0C /* RoundedImage.swift */; };
+		A60C43312694ADDD00C69AB5 /* InstructorHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C43302694ADDD00C69AB5 /* InstructorHomeViewController.swift */; };
+		A60C43392694B24100C69AB5 /* customView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C43382694B24100C69AB5 /* customView.swift */; };
 		A616A8FE2690395A00C5BF3C /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A616A8FD2690395A00C5BF3C /* RequestViewController.swift */; };
 		A622EB6E267FE7B300A289C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A622EB6D267FE7B300A289C7 /* AppDelegate.swift */; };
 		A622EB70267FE7B300A289C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A622EB6F267FE7B300A289C7 /* SceneDelegate.swift */; };
@@ -18,17 +20,25 @@
 		A622EB85267FE7B600A289C7 /* ZakerlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A622EB84267FE7B600A289C7 /* ZakerlyTests.swift */; };
 		A622EB90267FE7B600A289C7 /* ZakerlyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A622EB8F267FE7B600A289C7 /* ZakerlyUITests.swift */; };
 		A638F4F12690519B0071090E /* EditRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A638F4F02690519B0071090E /* EditRequestViewController.swift */; };
+		A639B8582693A069007BEBDB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A639B8572693A069007BEBDB /* User.swift */; };
+		A639B85D2693A377007BEBDB /* Interests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A639B85C2693A377007BEBDB /* Interests.swift */; };
+		A639B87B2693AD98007BEBDB /* ToDict.swift in Sources */ = {isa = PBXBuildFile; fileRef = A639B87A2693AD98007BEBDB /* ToDict.swift */; };
 		A63D9BB8268CB6EF00E59B23 /* CommentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D9BB6268CB6EF00E59B23 /* CommentsTableViewCell.swift */; };
 		A63D9BB9268CB6EF00E59B23 /* CommentsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A63D9BB7268CB6EF00E59B23 /* CommentsTableViewCell.xib */; };
 		A63D9EA0268AAB8200E61780 /* IconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D9E9F268AAB8200E61780 /* IconButton.swift */; };
 		A63E0C23269078BA00F9DB4E /* EditProfileStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63E0C22269078BA00F9DB4E /* EditProfileStudentViewController.swift */; };
 		A63E26C8268D781F00C0634B /* InstructorFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63E26C7268D781F00C0634B /* InstructorFriendViewController.swift */; };
+		A63E54462696B9AE003F4C2C /* InstructorProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63E54452696B9AE003F4C2C /* InstructorProfileViewController.swift */; };
+		A63E544F2696BA8C003F4C2C /* StudentsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63E544D2696BA8C003F4C2C /* StudentsCollectionViewCell.swift */; };
+		A63E54502696BA8C003F4C2C /* StudentsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A63E544E2696BA8C003F4C2C /* StudentsCollectionViewCell.xib */; };
 		A63FB7AD2683883F001F14FE /* FavouritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63FB7AB2683883F001F14FE /* FavouritesTableViewCell.swift */; };
 		A63FB7AE2683883F001F14FE /* FavouritesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A63FB7AC2683883F001F14FE /* FavouritesTableViewCell.xib */; };
 		A63FB7B326839AEA001F14FE /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63FB7B226839AEA001F14FE /* FavouritesViewController.swift */; };
 		A63FB7BB2683C93E001F14FE /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63FB7BA2683C93E001F14FE /* CustomButton.swift */; };
 		A63FB7DF2684113A001F14FE /* StudentProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63FB7DE2684113A001F14FE /* StudentProfileVC.swift */; };
 		A66E58F1268D947B00E2F571 /* InstructorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66E58F0268D947B00E2F571 /* InstructorViewController.swift */; };
+		A66E6DBE2695C41D00878876 /* CalendarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A66E6DBC2695C41D00878876 /* CalendarCollectionViewCell.xib */; };
+		A66E6DCC2695D1D800878876 /* CalendarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66E6DCB2695D1D800878876 /* CalendarCollectionViewCell.swift */; };
 		A6A578C826855FFA000EEEC2 /* RecommendedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A578C626855FFA000EEEC2 /* RecommendedCollectionViewCell.swift */; };
 		A6A578C926855FFA000EEEC2 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6A578C726855FFA000EEEC2 /* CollectionViewCell.xib */; };
 		A6A578D12685689A000EEEC2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A578D02685689A000EEEC2 /* HomeViewController.swift */; };
@@ -70,6 +80,8 @@
 		9285D57ADA3FBF5410714BA8 /* Pods-ZakerlyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZakerlyTests.release.xcconfig"; path = "Target Support Files/Pods-ZakerlyTests/Pods-ZakerlyTests.release.xcconfig"; sourceTree = "<group>"; };
 		93EBF8EF4C79AF7FB97825ED /* Pods_Zakerly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zakerly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6097D89268F1A96004F2F0C /* RoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
+		A60C43302694ADDD00C69AB5 /* InstructorHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InstructorHomeViewController.swift; path = Zakerly/Views/InstructorHomeViewController.swift; sourceTree = SOURCE_ROOT; };
+		A60C43382694B24100C69AB5 /* customView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = customView.swift; path = Zakerly/Views/customView.swift; sourceTree = SOURCE_ROOT; };
 		A616A8FD2690395A00C5BF3C /* RequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
 		A622EB6A267FE7B300A289C7 /* Zakerly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zakerly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A622EB6D267FE7B300A289C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,11 +97,17 @@
 		A622EB8F267FE7B600A289C7 /* ZakerlyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZakerlyUITests.swift; sourceTree = "<group>"; };
 		A622EB91267FE7B600A289C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A638F4F02690519B0071090E /* EditRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRequestViewController.swift; sourceTree = "<group>"; };
+		A639B8572693A069007BEBDB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = Zakerly/Controllers/User.swift; sourceTree = SOURCE_ROOT; };
+		A639B85C2693A377007BEBDB /* Interests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interests.swift; sourceTree = "<group>"; };
+		A639B87A2693AD98007BEBDB /* ToDict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ToDict.swift; path = Zakerly/Controllers/ToDict.swift; sourceTree = SOURCE_ROOT; };
 		A63D9BB6268CB6EF00E59B23 /* CommentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CommentsTableViewCell.swift; path = Zakerly/Views/CommentsTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		A63D9BB7268CB6EF00E59B23 /* CommentsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CommentsTableViewCell.xib; path = Zakerly/Views/CommentsTableViewCell.xib; sourceTree = SOURCE_ROOT; };
 		A63D9E9F268AAB8200E61780 /* IconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButton.swift; sourceTree = "<group>"; };
 		A63E0C22269078BA00F9DB4E /* EditProfileStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileStudentViewController.swift; sourceTree = "<group>"; };
 		A63E26C7268D781F00C0634B /* InstructorFriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InstructorFriendViewController.swift; path = Zakerly/Views/InstructorFriendViewController.swift; sourceTree = SOURCE_ROOT; };
+		A63E54452696B9AE003F4C2C /* InstructorProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InstructorProfileViewController.swift; path = Zakerly/Models/InstructorProfileViewController.swift; sourceTree = SOURCE_ROOT; };
+		A63E544D2696BA8C003F4C2C /* StudentsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StudentsCollectionViewCell.swift; path = Zakerly/Views/StudentsCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
+		A63E544E2696BA8C003F4C2C /* StudentsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = StudentsCollectionViewCell.xib; path = Zakerly/Views/StudentsCollectionViewCell.xib; sourceTree = SOURCE_ROOT; };
 		A63FB7AB2683883F001F14FE /* FavouritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesTableViewCell.swift; sourceTree = "<group>"; };
 		A63FB7AC2683883F001F14FE /* FavouritesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouritesTableViewCell.xib; sourceTree = "<group>"; };
 		A63FB7B226839AEA001F14FE /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +118,8 @@
 		A63FB7CE26840BE0001F14FE /* Segoe UI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Segoe UI.ttf"; sourceTree = "<group>"; };
 		A63FB7DE2684113A001F14FE /* StudentProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentProfileVC.swift; sourceTree = "<group>"; };
 		A66E58F0268D947B00E2F571 /* InstructorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructorViewController.swift; sourceTree = "<group>"; };
+		A66E6DBC2695C41D00878876 /* CalendarCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarCollectionViewCell.xib; sourceTree = "<group>"; };
+		A66E6DCB2695D1D800878876 /* CalendarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCollectionViewCell.swift; sourceTree = "<group>"; };
 		A6A578B726855833000EEEC2 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-BlackItalic.ttf"; path = "../../../../Downloads/Roboto-1/Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
 		A6A578B826855833000EEEC2 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Medium.ttf"; path = "../../../../Downloads/Roboto-1/Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		A6A578B926855833000EEEC2 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-MediumItalic.ttf"; path = "../../../../Downloads/Roboto-1/Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
@@ -228,6 +248,14 @@
 		A63FB79E26837C0E001F14FE /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A63E544D2696BA8C003F4C2C /* StudentsCollectionViewCell.swift */,
+				A63E544E2696BA8C003F4C2C /* StudentsCollectionViewCell.xib */,
+				A60C43382694B24100C69AB5 /* customView.swift */,
+				A639B87A2693AD98007BEBDB /* ToDict.swift */,
+				A639B8572693A069007BEBDB /* User.swift */,
+				A639B85C2693A377007BEBDB /* Interests.swift */,
+				A66E6DBC2695C41D00878876 /* CalendarCollectionViewCell.xib */,
+				A66E6DCB2695D1D800878876 /* CalendarCollectionViewCell.swift */,
 				A63D9BB6268CB6EF00E59B23 /* CommentsTableViewCell.swift */,
 				A63D9BB7268CB6EF00E59B23 /* CommentsTableViewCell.xib */,
 				A63FB7BA2683C93E001F14FE /* CustomButton.swift */,
@@ -290,6 +318,8 @@
 				A616A8FD2690395A00C5BF3C /* RequestViewController.swift */,
 				A638F4F02690519B0071090E /* EditRequestViewController.swift */,
 				A63E0C22269078BA00F9DB4E /* EditProfileStudentViewController.swift */,
+				A60C43302694ADDD00C69AB5 /* InstructorHomeViewController.swift */,
+				A63E54452696B9AE003F4C2C /* InstructorProfileViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -414,12 +444,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A66E6DBE2695C41D00878876 /* CalendarCollectionViewCell.xib in Resources */,
 				A622EB7A267FE7B600A289C7 /* LaunchScreen.storyboard in Resources */,
 				A622EB77267FE7B600A289C7 /* Assets.xcassets in Resources */,
 				A622EB75267FE7B300A289C7 /* Main.storyboard in Resources */,
 				A63FB7AE2683883F001F14FE /* FavouritesTableViewCell.xib in Resources */,
 				A6A578C926855FFA000EEEC2 /* CollectionViewCell.xib in Resources */,
 				A6A830ED2689A07C00A8A795 /* GoogleService-Info.plist in Resources */,
+				A63E54502696BA8C003F4C2C /* StudentsCollectionViewCell.xib in Resources */,
 				A63D9BB9268CB6EF00E59B23 /* CommentsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -582,6 +614,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A66E6DCC2695D1D800878876 /* CalendarCollectionViewCell.swift in Sources */,
 				A63D9EA0268AAB8200E61780 /* IconButton.swift in Sources */,
 				A63E26C8268D781F00C0634B /* InstructorFriendViewController.swift in Sources */,
 				A616A8FE2690395A00C5BF3C /* RequestViewController.swift in Sources */,
@@ -593,17 +626,24 @@
 				A63FB7DF2684113A001F14FE /* StudentProfileVC.swift in Sources */,
 				A638F4F12690519B0071090E /* EditRequestViewController.swift in Sources */,
 				A6AFC41A2689FA9600EE2E41 /* StudentTabBarController.swift in Sources */,
+				A63E544F2696BA8C003F4C2C /* StudentsCollectionViewCell.swift in Sources */,
 				A6097D8A268F1A96004F2F0C /* RoundedImage.swift in Sources */,
 				A63FB7BB2683C93E001F14FE /* CustomButton.swift in Sources */,
+				A639B8582693A069007BEBDB /* User.swift in Sources */,
+				A63E54462696B9AE003F4C2C /* InstructorProfileViewController.swift in Sources */,
 				A63FB7AD2683883F001F14FE /* FavouritesTableViewCell.swift in Sources */,
 				A622EB6E267FE7B300A289C7 /* AppDelegate.swift in Sources */,
 				A63D9BB8268CB6EF00E59B23 /* CommentsTableViewCell.swift in Sources */,
 				A66E58F1268D947B00E2F571 /* InstructorViewController.swift in Sources */,
+				A60C43312694ADDD00C69AB5 /* InstructorHomeViewController.swift in Sources */,
 				A6E81E4B2682CFA0006FF584 /* ForgetPasswordViewController.swift in Sources */,
 				A6AFC3FE2689D5E400EE2E41 /* SettingsViewController.swift in Sources */,
+				A60C43392694B24100C69AB5 /* customView.swift in Sources */,
 				A6E81E462682CF8A006FF584 /* SignUpStudentViewController.swift in Sources */,
 				A6A578D12685689A000EEEC2 /* HomeViewController.swift in Sources */,
 				A6AFC3F92689C93500EE2E41 /* LoginViewController.swift in Sources */,
+				A639B87B2693AD98007BEBDB /* ToDict.swift in Sources */,
+				A639B85D2693A377007BEBDB /* Interests.swift in Sources */,
 				A622EB70267FE7B300A289C7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

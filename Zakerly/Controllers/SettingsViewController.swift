@@ -11,7 +11,8 @@ class SettingsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationItem.hidesBackButton = true
+        navigationController?.isNavigationBarHidden = true
         // Do any additional setup after loading the view.
     }
     

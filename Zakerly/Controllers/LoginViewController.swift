@@ -7,6 +7,8 @@
 
 import UIKit
 import Firebase
+import FirebaseCore
+import FirebaseDatabase
 import GoogleSignIn
 import FBSDKCoreKit
 import FBSDKLoginKit
@@ -22,13 +24,18 @@ class LoginViewController: UIViewController {
     func loginButtonDidLogOut(_ loginButton: FBLoginButton) {
         print("logged out")
     }*/
-    
+    var ref: DatabaseReference!
+    var programmingInterest = Interests.init(id: 0, ar: "البرجمة", en: "Programming")
 
     @IBOutlet var emailTF: CustomTextField!
     @IBOutlet var passwordTF: CustomTextField!
     @IBOutlet weak var signInWithGoogleBtn: GIDSignInButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        ref = Database.database().reference()
+
+        ref.child("specialisations").child("Programming").setValue(programmingInterest.toDict())
+        
         GIDSignIn.sharedInstance()?.presentingViewController = self
        // signInWithFacebookBtn.delegate = self
         if( GIDSignIn.sharedInstance()?.currentUser != nil ){
@@ -61,6 +68,8 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func signUpPressed(_ sender: Any) {
+
+
 
     }
     
