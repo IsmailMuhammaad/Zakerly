@@ -54,9 +54,10 @@ class LoginViewController: UIViewController {
         Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
             if let e = error {
                 print(e.localizedDescription)
-            }else{
-                  self.performSegue(withIdentifier: "goToStudentHome", sender: self)
-                 }
+            }else {
+                let instructorVC = self.storyboard?.instantiateViewController(identifier: "studentTabBar")
+                self.navigationController?.pushViewController(instructorVC!, animated: true)
+            }
             
         }
 

@@ -36,6 +36,7 @@
 		A63FB7B326839AEA001F14FE /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63FB7B226839AEA001F14FE /* FavouritesViewController.swift */; };
 		A63FB7BB2683C93E001F14FE /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63FB7BA2683C93E001F14FE /* CustomButton.swift */; };
 		A63FB7DF2684113A001F14FE /* StudentProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63FB7DE2684113A001F14FE /* StudentProfileVC.swift */; };
+		A6411612269B25C200404EFE /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6411611269B25C200404EFE /* Student.swift */; };
 		A66E58F1268D947B00E2F571 /* InstructorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66E58F0268D947B00E2F571 /* InstructorViewController.swift */; };
 		A66E6DBE2695C41D00878876 /* CalendarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A66E6DBC2695C41D00878876 /* CalendarCollectionViewCell.xib */; };
 		A66E6DCC2695D1D800878876 /* CalendarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66E6DCB2695D1D800878876 /* CalendarCollectionViewCell.swift */; };
@@ -47,6 +48,7 @@
 		A6AFC3FE2689D5E400EE2E41 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AFC3FD2689D5E400EE2E41 /* SettingsViewController.swift */; };
 		A6AFC41A2689FA9600EE2E41 /* StudentTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AFC4192689FA9600EE2E41 /* StudentTabBarController.swift */; };
 		A6B70C7F26815D4E004F4BB4 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B70C7E26815D4E004F4BB4 /* CustomTextField.swift */; };
+		A6C280FE269A3BF70087C88B /* Instructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C280FD269A3BF70087C88B /* Instructor.swift */; };
 		A6E81E3E2682CF69006FF584 /* SignUpInstructorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E81E3D2682CF69006FF584 /* SignUpInstructorViewController.swift */; };
 		A6E81E462682CF8A006FF584 /* SignUpStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E81E452682CF8A006FF584 /* SignUpStudentViewController.swift */; };
 		A6E81E4B2682CFA0006FF584 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E81E4A2682CFA0006FF584 /* ForgetPasswordViewController.swift */; };
@@ -117,6 +119,7 @@
 		A63FB7CD26840BDE001F14FE /* Segoe UI Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Segoe UI Bold.ttf"; sourceTree = "<group>"; };
 		A63FB7CE26840BE0001F14FE /* Segoe UI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Segoe UI.ttf"; sourceTree = "<group>"; };
 		A63FB7DE2684113A001F14FE /* StudentProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentProfileVC.swift; sourceTree = "<group>"; };
+		A6411611269B25C200404EFE /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		A66E58F0268D947B00E2F571 /* InstructorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructorViewController.swift; sourceTree = "<group>"; };
 		A66E6DBC2695C41D00878876 /* CalendarCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarCollectionViewCell.xib; sourceTree = "<group>"; };
 		A66E6DCB2695D1D800878876 /* CalendarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -140,6 +143,7 @@
 		A6AFC3FD2689D5E400EE2E41 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		A6AFC4192689FA9600EE2E41 /* StudentTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTabBarController.swift; sourceTree = "<group>"; };
 		A6B70C7E26815D4E004F4BB4 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		A6C280FD269A3BF70087C88B /* Instructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instructor.swift; sourceTree = "<group>"; };
 		A6E81E3D2682CF69006FF584 /* SignUpInstructorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInstructorViewController.swift; sourceTree = "<group>"; };
 		A6E81E452682CF8A006FF584 /* SignUpStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpStudentViewController.swift; sourceTree = "<group>"; };
 		A6E81E4A2682CFA0006FF584 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
@@ -253,6 +257,8 @@
 				A60C43382694B24100C69AB5 /* customView.swift */,
 				A639B87A2693AD98007BEBDB /* ToDict.swift */,
 				A639B8572693A069007BEBDB /* User.swift */,
+				A6411611269B25C200404EFE /* Student.swift */,
+				A6C280FD269A3BF70087C88B /* Instructor.swift */,
 				A639B85C2693A377007BEBDB /* Interests.swift */,
 				A66E6DBC2695C41D00878876 /* CalendarCollectionViewCell.xib */,
 				A66E6DCB2695D1D800878876 /* CalendarCollectionViewCell.swift */,
@@ -622,6 +628,7 @@
 				A6B70C7F26815D4E004F4BB4 /* CustomTextField.swift in Sources */,
 				A6A578C826855FFA000EEEC2 /* RecommendedCollectionViewCell.swift in Sources */,
 				A63E0C23269078BA00F9DB4E /* EditProfileStudentViewController.swift in Sources */,
+				A6C280FE269A3BF70087C88B /* Instructor.swift in Sources */,
 				A6E81E3E2682CF69006FF584 /* SignUpInstructorViewController.swift in Sources */,
 				A63FB7DF2684113A001F14FE /* StudentProfileVC.swift in Sources */,
 				A638F4F12690519B0071090E /* EditRequestViewController.swift in Sources */,
@@ -638,6 +645,7 @@
 				A60C43312694ADDD00C69AB5 /* InstructorHomeViewController.swift in Sources */,
 				A6E81E4B2682CFA0006FF584 /* ForgetPasswordViewController.swift in Sources */,
 				A6AFC3FE2689D5E400EE2E41 /* SettingsViewController.swift in Sources */,
+				A6411612269B25C200404EFE /* Student.swift in Sources */,
 				A60C43392694B24100C69AB5 /* customView.swift in Sources */,
 				A6E81E462682CF8A006FF584 /* SignUpStudentViewController.swift in Sources */,
 				A6A578D12685689A000EEEC2 /* HomeViewController.swift in Sources */,

@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import SDWebImage
 class RecommendedCollectionViewCell: UICollectionViewCell {
  
     @IBOutlet weak var instructorName: UILabel!
@@ -31,9 +31,8 @@ class RecommendedCollectionViewCell: UICollectionViewCell {
     }
 
 
-    func setupCell(image: UIImage, name: String, speciality: String, description: String){
-        
-        instructorImage.image = image
+    func setupCell(image: String, name: String, speciality: String, description: String){
+        instructorImage.sd_setImage(with: URL(string: image), placeholderImage: UIImage(named: "noUser"), options: .continueInBackground, completed: nil)
         instructorName.text = name
         instructorSpeciality.text = speciality
         instructorDescription.text = description

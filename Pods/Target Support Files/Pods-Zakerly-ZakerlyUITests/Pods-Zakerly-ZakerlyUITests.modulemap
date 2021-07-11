@@ -1,0 +1,6 @@
+framework module Pods_Zakerly_ZakerlyUITests {
+  umbrella header "Pods-Zakerly-ZakerlyUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

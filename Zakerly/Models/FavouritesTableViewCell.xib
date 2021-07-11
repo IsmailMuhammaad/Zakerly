@@ -30,7 +30,7 @@
                         <rect key="frame" x="12" y="11" width="392" height="148"/>
                         <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                     </view>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OpN-TH-OR4" customClass="RoundedImage" customModule="Zakerly" customModuleProvider="target">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OpN-TH-OR4">
                         <rect key="frame" x="20" y="20" width="85" height="85"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="OpN-TH-OR4" secondAttribute="height" multiplier="1:1" id="9Pm-uT-1SA"/>

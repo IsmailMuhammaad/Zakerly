@@ -12,11 +12,15 @@ class FavouritesViewController: UIViewController,UITableViewDelegate,UITableView
 
     @IBOutlet weak var favouritesTableView: UITableView!
     var arrInstructors = [Instructor]()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        navigationController?.isNavigationBarHidden = true
+        navigationItem.hidesBackButton = true
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        navigationItem.hidesBackButton = true
-        navigationController?.isNavigationBarHidden = true
+
         favouritesTableView.delegate = self
         favouritesTableView.dataSource = self
         
@@ -35,7 +39,7 @@ class FavouritesViewController: UIViewController,UITableViewDelegate,UITableView
        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = favouritesTableView.dequeueReusableCell(withIdentifier: "favCell") as! FavouritesTableViewCell
         let data = arrInstructors[indexPath.row]
-        cell.setupCell(image: data.image, name: data.name, speciality: data.speciality, description: data.description)
+      //  cell.setupCell(image: data., name: data.name, speciality: data.speciality, description: data.description)
         
         return cell
        }

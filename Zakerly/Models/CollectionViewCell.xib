@@ -21,7 +21,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="212" height="125"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cLR-zs-BXC" userLabel="Instruction Image" customClass="RoundedImage" customModule="Zakerly" customModuleProvider="target">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cLR-zs-BXC" userLabel="Instruction Image">
                         <rect key="frame" x="10" y="7" width="52" height="52"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="cLR-zs-BXC" secondAttribute="height" multiplier="1:1" id="gGL-hX-Bqp"/>

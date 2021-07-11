@@ -8,11 +8,16 @@
 import UIKit
 import Firebase
 class SettingsViewController: UIViewController {
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        navigationController?.isNavigationBarHidden = true
+        navigationItem.hidesBackButton = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.hidesBackButton = true
-        navigationController?.isNavigationBarHidden = true
+
         // Do any additional setup after loading the view.
     }
     

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eWo-Cb-7kf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="T3f-hY-Yi2">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
@@ -82,7 +82,6 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="signInPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PcS-Br-UOv"/>
-                                                    <segue destination="epZ-AV-vSf" kind="show" identifier="goToStudentHome" id="tYw-z1-fXj"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sz8-QU-ts5">
@@ -306,6 +305,9 @@
                                         <state key="normal" title="Sign Up">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="eWo-Cb-7kf" kind="show" id="sQM-Eb-lJ3"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -484,25 +486,8 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="4PT-aD-gqX">
                                 <rect key="frame" x="30" y="10" width="315" height="333.5"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fQs-mf-vQ7">
-                                        <rect key="frame" x="0.0" y="0.0" width="315" height="35"/>
-                                        <state key="normal">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="Language">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" size="30" name="SegoeUI-Bold"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                        </state>
-                                        <connections>
-                                            <action selector="languagePressed:" destination="oIw-cr-zms" eventType="touchUpInside" id="gs8-NQ-lwd"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WCO-3c-dos">
-                                        <rect key="frame" x="0.0" y="50" width="315" height="34.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="220" height="43"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
                                                 <fragment content="Dark Mode">
@@ -519,7 +504,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vC8-IA-0MC">
-                                        <rect key="frame" x="0.0" y="99.5" width="315" height="35"/>
+                                        <rect key="frame" x="0.0" y="58" width="220" height="43"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
                                                 <fragment content="Rate Us">
@@ -536,7 +521,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bwI-wk-GjY">
-                                        <rect key="frame" x="0.0" y="149.5" width="315" height="34.5"/>
+                                        <rect key="frame" x="0.0" y="116" width="220" height="43.5"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
                                                 <fragment content="About Service">
@@ -553,7 +538,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kXs-xY-sDa">
-                                        <rect key="frame" x="0.0" y="199" width="315" height="35"/>
+                                        <rect key="frame" x="0.0" y="174.5" width="220" height="43"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
                                                 <fragment content="Privacy ">
@@ -570,7 +555,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y7p-7V-yLb">
-                                        <rect key="frame" x="0.0" y="249" width="315" height="34.5"/>
+                                        <rect key="frame" x="0.0" y="232.5" width="220" height="43"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
                                                 <fragment content="Contact with us">
@@ -587,7 +572,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MqI-Ov-TzH">
-                                        <rect key="frame" x="0.0" y="298.5" width="315" height="35"/>
+                                        <rect key="frame" x="0.0" y="290.5" width="220" height="43"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
                                                 <fragment content="Sign out">
@@ -611,12 +596,8 @@
                                     <constraint firstItem="vC8-IA-0MC" firstAttribute="trailing" secondItem="WCO-3c-dos" secondAttribute="trailing" id="GGy-Xr-4s0"/>
                                     <constraint firstItem="kXs-xY-sDa" firstAttribute="leading" secondItem="bwI-wk-GjY" secondAttribute="leading" id="TyZ-tv-ari"/>
                                     <constraint firstItem="bwI-wk-GjY" firstAttribute="leading" secondItem="vC8-IA-0MC" secondAttribute="leading" id="UJd-Oe-1xv"/>
-                                    <constraint firstAttribute="trailing" secondItem="fQs-mf-vQ7" secondAttribute="trailing" id="YhS-CZ-BgB"/>
                                     <constraint firstItem="vC8-IA-0MC" firstAttribute="leading" secondItem="WCO-3c-dos" secondAttribute="leading" id="ZDq-fB-I98"/>
-                                    <constraint firstItem="WCO-3c-dos" firstAttribute="trailing" secondItem="fQs-mf-vQ7" secondAttribute="trailing" id="dtg-jT-uYt"/>
-                                    <constraint firstItem="WCO-3c-dos" firstAttribute="leading" secondItem="fQs-mf-vQ7" secondAttribute="leading" id="hJn-ay-SR7"/>
                                     <constraint firstItem="MqI-Ov-TzH" firstAttribute="leading" secondItem="y7p-7V-yLb" secondAttribute="leading" id="hmV-3b-gQW"/>
-                                    <constraint firstItem="fQs-mf-vQ7" firstAttribute="leading" secondItem="4PT-aD-gqX" secondAttribute="leading" id="m15-Z8-3j4"/>
                                     <constraint firstItem="y7p-7V-yLb" firstAttribute="trailing" secondItem="kXs-xY-sDa" secondAttribute="trailing" id="mMI-WF-QvZ"/>
                                     <constraint firstItem="y7p-7V-yLb" firstAttribute="leading" secondItem="kXs-xY-sDa" secondAttribute="leading" id="n5D-z0-wDk"/>
                                     <constraint firstItem="bwI-wk-GjY" firstAttribute="trailing" secondItem="vC8-IA-0MC" secondAttribute="trailing" id="tux-Hv-pWQ"/>
@@ -642,7 +623,7 @@
         <!--Student Tab Bar Controller-->
         <scene sceneID="n0a-Aw-QYA">
             <objects>
-                <tabBarController id="epZ-AV-vSf" customClass="StudentTabBarController" customModule="Zakerly" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="studentTabBar" id="epZ-AV-vSf" customClass="StudentTabBarController" customModule="Zakerly" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="WYe-8b-zAE"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="f0e-T2-oMX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -726,13 +707,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favourites" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="2h3-3t-Ebd">
-                                <rect key="frame" x="125.5" y="44" width="124" height="27.5"/>
+                                <rect key="frame" x="125.5" y="0.0" width="124" height="27.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="170" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zHo-1A-avZ">
-                                <rect key="frame" x="27" y="86.5" width="321" height="531.5"/>
+                                <rect key="frame" x="27" y="42.5" width="321" height="575.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="favCell" id="fDn-Av-OrA" customClass="FavouritesTableViewCell" customModule="Zakerly" customModuleProvider="target">
@@ -848,13 +829,13 @@
         <!--Home-->
         <scene sceneID="Ns2-0i-J1i">
             <objects>
-                <viewController id="4sS-eA-kmS" customClass="HomeViewController" customModule="Zakerly" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="homeVC" id="4sS-eA-kmS" customClass="HomeViewController" customModule="Zakerly" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Qx-IP-bFn">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mL7-mY-V3T">
-                                <rect key="frame" x="0.0" y="44" width="320" height="956"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="951"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Da-2U-mkv" userLabel="contentView">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="769"/>
@@ -1160,7 +1141,7 @@
                                                 </constraints>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="arL-nE-QsI" userLabel="NoOfStudents">
-                                                <rect key="frame" x="50" y="379" width="135" height="140.5"/>
+                                                <rect key="frame" x="50" y="379" width="133.5" height="140.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="140.66999999999999" id="peM-Zl-hx9"/>
                                                 </constraints>
@@ -1169,7 +1150,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Students" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="SU1-N4-fzd">
-                                                <rect key="frame" x="195" y="426" width="120" height="47"/>
+                                                <rect key="frame" x="193.5" y="426" width="121.5" height="47"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="47" id="Yjv-Ck-Efh"/>
                                                 </constraints>
@@ -1204,7 +1185,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student Feedback" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="zRY-Nf-bRr">
-                                                <rect key="frame" x="62" y="854.5" width="251.5" height="40"/>
+                                                <rect key="frame" x="64" y="854.5" width="247" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="ag1-cm-inE"/>
                                                 </constraints>
@@ -1213,7 +1194,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="33" translatesAutoresizingMaskIntoConstraints="NO" id="aeV-1o-RtT" userLabel="rate">
-                                                <rect key="frame" x="62" y="914.5" width="92.5" height="87"/>
+                                                <rect key="frame" x="64" y="914.5" width="90.5" height="87"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="86.670000000000002" id="SKY-3O-3q2"/>
                                                 </constraints>
@@ -1222,7 +1203,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="average rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibG-Wa-HB5">
-                                                <rect key="frame" x="169.5" y="943" width="117" height="30"/>
+                                                <rect key="frame" x="169.5" y="943" width="111.5" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="fvn-fq-E2a"/>
                                                 </constraints>
@@ -1254,34 +1235,34 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UOd-bF-Ehf">
-                                                <rect key="frame" x="274.5" y="1026.5" width="40.5" height="150"/>
+                                                <rect key="frame" x="272.5" y="1026.5" width="42.5" height="150"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="65%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWH-3l-UO7">
-                                                        <rect key="frame" x="0.0" y="0.0" width="40.5" height="22"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="42.5" height="22"/>
                                                         <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="20"/>
                                                         <color key="textColor" red="0.60360914470000004" green="0.60023844240000002" blue="0.60007047650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQc-Wm-qyJ">
-                                                        <rect key="frame" x="0.0" y="32" width="40.5" height="22"/>
+                                                        <rect key="frame" x="0.0" y="32" width="42.5" height="22"/>
                                                         <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="20"/>
                                                         <color key="textColor" red="0.60360914470000004" green="0.60023844240000002" blue="0.60007047650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6Q-Zo-wjk">
-                                                        <rect key="frame" x="0.0" y="64" width="40.5" height="22"/>
+                                                        <rect key="frame" x="0.0" y="64" width="42.5" height="22"/>
                                                         <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="20"/>
                                                         <color key="textColor" red="0.60360914470000004" green="0.60023844240000002" blue="0.60007047650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7J-lu-woI">
-                                                        <rect key="frame" x="0.0" y="96" width="40.5" height="22"/>
+                                                        <rect key="frame" x="0.0" y="96" width="42.5" height="22"/>
                                                         <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="20"/>
                                                         <color key="textColor" red="0.60360914470000004" green="0.60023844240000002" blue="0.60007047650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5F-Aq-X7W">
-                                                        <rect key="frame" x="0.0" y="128" width="40.5" height="22"/>
+                                                        <rect key="frame" x="0.0" y="128" width="42.5" height="22"/>
                                                         <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="20"/>
                                                         <color key="textColor" red="0.60360914470000004" green="0.60023844240000002" blue="0.60007047650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -1356,7 +1337,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student Opinion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSn-lk-bkg">
-                                                <rect key="frame" x="110" y="1412.5" width="155" height="30"/>
+                                                <rect key="frame" x="114.5" y="1412.5" width="146" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="chE-39-Eji"/>
                                                 </constraints>
@@ -1631,7 +1612,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student Feedback" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="rLA-Qv-k3R">
-                                                <rect key="frame" x="81.5" y="854.5" width="251.5" height="40"/>
+                                                <rect key="frame" x="83.5" y="854.5" width="247" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="qcj-Ea-ZwS"/>
                                                 </constraints>
@@ -1640,7 +1621,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="33" translatesAutoresizingMaskIntoConstraints="NO" id="6us-Y6-Czr" userLabel="rate">
-                                                <rect key="frame" x="81.5" y="914.5" width="92.5" height="87"/>
+                                                <rect key="frame" x="83.5" y="914.5" width="90.5" height="87"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="86.670000000000002" id="FaZ-60-wPp"/>
                                                 </constraints>
@@ -1649,7 +1630,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="average rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jww-wQ-KH5">
-                                                <rect key="frame" x="189" y="943" width="117" height="30"/>
+                                                <rect key="frame" x="189" y="943" width="111.5" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="qwu-0P-x59"/>
                                                 </constraints>
@@ -1681,34 +1662,34 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Gdk-io-XBK">
-                                                <rect key="frame" x="259" y="1026.5" width="40.5" height="150"/>
+                                                <rect key="frame" x="259" y="1026.5" width="42.5" height="150"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="65%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="00L-Wg-Gi2">
-                                                        <rect key="frame" x="0.0" y="0.0" width="40.5" height="22"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="42.5" height="22"/>
                                                         <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="20"/>
                                                         <color key="textColor" red="0.60360914470000004" green="0.60023844240000002" blue="0.60007047650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Smx-AA-SP8">
-                                                        <rect key="frame" x="0.0" y="32" width="40.5" height="22"/>
+                                                        <rect key="frame" x="0.0" y="32" width="42.5" height="22"/>
                                                         <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="20"/>
                                                         <color key="textColor" red="0.60360914470000004" green="0.60023844240000002" blue="0.60007047650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cew-KA-Z0b">
-                                                        <rect key="frame" x="0.0" y="64" width="40.5" height="22"/>
+                                                        <rect key="frame" x="0.0" y="64" width="42.5" height="22"/>
                                                         <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="20"/>
                                                         <color key="textColor" red="0.60360914470000004" green="0.60023844240000002" blue="0.60007047650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rV-TY-H54">
-                                                        <rect key="frame" x="0.0" y="96" width="40.5" height="22"/>
+                                                        <rect key="frame" x="0.0" y="96" width="42.5" height="22"/>
                                                         <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="20"/>
                                                         <color key="textColor" red="0.60360914470000004" green="0.60023844240000002" blue="0.60007047650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4kN-Ap-7Sk">
-                                                        <rect key="frame" x="0.0" y="128" width="40.5" height="22"/>
+                                                        <rect key="frame" x="0.0" y="128" width="42.5" height="22"/>
                                                         <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="20"/>
                                                         <color key="textColor" red="0.60360914470000004" green="0.60023844240000002" blue="0.60007047650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -1784,7 +1765,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student Opinion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xyY-Cp-9hk">
-                                                <rect key="frame" x="129.5" y="1412.5" width="155" height="30"/>
+                                                <rect key="frame" x="134" y="1412.5" width="146" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="aZi-gD-ww6"/>
                                                 </constraints>
@@ -1935,20 +1916,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img2" translatesAutoresizingMaskIntoConstraints="NO" id="bxU-no-rFl" customClass="RoundedImage" customModule="Zakerly" customModuleProvider="target">
-                                <rect key="frame" x="130" y="94" width="115" height="115"/>
+                                <rect key="frame" x="130" y="50" width="115" height="115"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="115" id="4wK-nj-yW5"/>
                                     <constraint firstAttribute="width" secondItem="bxU-no-rFl" secondAttribute="height" multiplier="1:1" id="u2R-gW-HdJ"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="a7L-2B-JbU">
-                                <rect key="frame" x="20" y="227" width="335" height="28"/>
+                                <rect key="frame" x="20" y="183" width="335" height="28"/>
                                 <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVQ-gF-SX9" userLabel="Set Profile Photo">
-                                <rect key="frame" x="202" y="151" width="58" height="58"/>
+                                <rect key="frame" x="202" y="107" width="58" height="58"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" image="Cameraa"/>
                                 <connections>
@@ -1956,7 +1937,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="p5G-d8-6NO">
-                                <rect key="frame" x="50" y="285" width="275" height="37"/>
+                                <rect key="frame" x="50" y="241" width="275" height="37"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bw4-ep-pfk" userLabel="Chat">
                                         <rect key="frame" x="0.0" y="0.0" width="39.5" height="37"/>
@@ -1980,13 +1961,13 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Teachers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="zL5-1d-8rh">
-                                <rect key="frame" x="106" y="352" width="163" height="37.5"/>
+                                <rect key="frame" x="106" y="308" width="163" height="37.5"/>
                                 <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="28"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Mo-hL-u3i">
-                                <rect key="frame" x="27" y="409.5" width="321" height="208.5"/>
+                                <rect key="frame" x="27" y="365.5" width="321" height="252.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="myTeachersCell" rowHeight="152" id="bUU-is-rPQ" customClass="FavouritesTableViewCell" customModule="Zakerly" customModuleProvider="target">
@@ -2041,24 +2022,24 @@
             <objects>
                 <viewController id="vFM-H4-ORW" userLabel="Edit Profile" customClass="EditProfileStudentViewController" customModule="Zakerly" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MTp-XU-gzk">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="GpU-d0-63M">
-                                <rect key="frame" x="87.5" y="54" width="200" height="33.5"/>
+                                <rect key="frame" x="87.5" y="10" width="200" height="29.5"/>
                                 <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img2" translatesAutoresizingMaskIntoConstraints="NO" id="QzD-LM-v7X" customClass="RoundedImage" customModule="Zakerly" customModuleProvider="target">
-                                <rect key="frame" x="130" y="107.5" width="115" height="115"/>
+                                <rect key="frame" x="130" y="59.5" width="115" height="115"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="115" id="Iff-vc-euU"/>
                                     <constraint firstAttribute="width" secondItem="QzD-LM-v7X" secondAttribute="height" multiplier="1:1" id="ivP-8r-vB0"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ByE-f2-QKS" userLabel="Set Profile Photo">
-                                <rect key="frame" x="202" y="164.5" width="58" height="58"/>
+                                <rect key="frame" x="202" y="116.5" width="58" height="58"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" image="Cameraa"/>
                                 <connections>
@@ -2066,7 +2047,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zta-j6-nnR">
-                                <rect key="frame" x="30" y="247.5" width="315" height="214"/>
+                                <rect key="frame" x="30" y="199.5" width="315" height="214"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CnT-W5-wSt" customClass="CustomTextField" customModule="Zakerly" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="315" height="34"/>
@@ -2148,7 +2129,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kareem Fouad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="WC7-A8-ckz">
-                                <rect key="frame" x="77.5" y="175" width="220" height="34"/>
+                                <rect key="frame" x="77.5" y="219" width="220" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="Pf2-CQ-1d1"/>
                                     <constraint firstAttribute="width" constant="220" id="h53-yb-Prn"/>
@@ -2158,14 +2139,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img" translatesAutoresizingMaskIntoConstraints="NO" id="ffG-kI-rRS" customClass="RoundedImage" customModule="Zakerly" customModuleProvider="target">
-                                <rect key="frame" x="125" y="30" width="125" height="125"/>
+                                <rect key="frame" x="125" y="74" width="125" height="125"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ffG-kI-rRS" secondAttribute="height" multiplier="1:1" id="Mpk-iL-x3h"/>
                                     <constraint firstAttribute="height" constant="125" id="pAJ-pW-8OT"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="mGD-RP-5Mi">
-                                <rect key="frame" x="72.5" y="229" width="230" height="40"/>
+                                <rect key="frame" x="72.5" y="273" width="230" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mmk-Dk-eE1">
                                         <rect key="frame" x="0.0" y="0.0" width="66.5" height="40"/>
@@ -2205,7 +2186,7 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="Whb-GP-dLM" userLabel="NoOfStudents">
-                                <rect key="frame" x="50" y="299" width="135" height="140.5"/>
+                                <rect key="frame" x="50" y="343" width="135" height="140.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="140.66999999999999" id="SQL-U0-VEf"/>
                                 </constraints>
@@ -2214,7 +2195,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Students" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="l4q-vL-WJI">
-                                <rect key="frame" x="195" y="346" width="120" height="47"/>
+                                <rect key="frame" x="195" y="390" width="120" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="8PD-Rz-okY"/>
                                 </constraints>
@@ -2223,13 +2204,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Students" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="9FZ-3X-3Sf">
-                                <rect key="frame" x="128.5" y="443" width="118" height="27"/>
+                                <rect key="frame" x="128.5" y="487" width="118" height="27"/>
                                 <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="yiQ-SQ-zy8">
-                                <rect key="frame" x="25" y="480" width="325" height="138"/>
+                                <rect key="frame" x="25" y="524" width="325" height="94"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9MQ-qf-hmk">
                                     <size key="itemSize" width="155" height="128"/>
@@ -2309,7 +2290,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="dJq-1U-M5A">
-                                <rect key="frame" x="30" y="20" width="315" height="128"/>
+                                <rect key="frame" x="30" y="64" width="315" height="128"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8qH-fz-CXg" customClass="customView" customModule="Zakerly" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="147.5" height="128"/>
@@ -2367,7 +2348,7 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z79-XJ-FnH" customClass="customView" customModule="Zakerly" customModuleProvider="target">
-                                <rect key="frame" x="30" y="168" width="315" height="100"/>
+                                <rect key="frame" x="30" y="212" width="315" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="tTj-cj-AIA">
                                         <rect key="frame" x="82" y="10" width="151" height="24"/>
@@ -2391,7 +2372,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Students Per Year" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="p5b-yJ-vDI">
-                                <rect key="frame" x="10" y="288" width="150" height="45.5"/>
+                                <rect key="frame" x="10" y="332" width="150" height="45.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="27M-zr-ceq"/>
                                 </constraints>
@@ -2400,7 +2381,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Hours Per Year" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="MFx-k8-Aub">
-                                <rect key="frame" x="215" y="288" width="150" height="45.5"/>
+                                <rect key="frame" x="215" y="332" width="150" height="45.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="hQi-Cf-6k7"/>
                                 </constraints>
@@ -2409,21 +2390,21 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cHJ-sE-Xrz" customClass="PieChartView" customModule="Charts">
-                                <rect key="frame" x="10" y="338.5" width="150" height="133.5"/>
+                                <rect key="frame" x="10" y="382.5" width="150" height="133.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lRf-mI-sgd" customClass="PieChartView" customModule="Charts">
-                                <rect key="frame" x="215" y="338.5" width="150" height="133.5"/>
+                                <rect key="frame" x="215" y="382.5" width="150" height="133.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upcoming Appointments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nu9-fv-YPw">
-                                <rect key="frame" x="10" y="477" width="189.5" height="20.5"/>
+                                <rect key="frame" x="10" y="521" width="189.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="wL7-Hm-6Ag">
-                                <rect key="frame" x="335" y="473" width="30" height="27.5"/>
+                                <rect key="frame" x="335" y="517" width="30" height="27.5"/>
                                 <color key="tintColor" red="0.26857316489999999" green="0.60751587149999997" blue="0.22672095889999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="4lR-GM-3FE"/>
@@ -2431,7 +2412,7 @@
                                 </constraints>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LBg-jc-FsP">
-                                <rect key="frame" x="25" y="502.5" width="325" height="164.5"/>
+                                <rect key="frame" x="25" y="546.5" width="325" height="120.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qL5-g1-YnR">
                                     <size key="itemSize" width="155" height="128"/>
@@ -2505,6 +2486,7 @@
         <scene sceneID="tFk-St-gKd">
             <objects>
                 <tabBarController id="eWo-Cb-7kf" userLabel="Instructor Tab Bar Controller" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="HQe-0h-Wow"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ate-5R-E9H">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -2831,55 +2813,55 @@
             <objects>
                 <viewController id="mRv-MN-kmU" userLabel="Edit Profile Instructor" customClass="SignUpInstructorViewController" customModule="Zakerly" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hve-Qh-DxL">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F9z-DH-lXx">
-                                <rect key="frame" x="119" y="15" width="137" height="52"/>
+                                <rect key="frame" x="119" y="59" width="137" height="53.5"/>
                                 <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7Oc-Pv-GAY">
-                                <rect key="frame" x="30" y="276" width="315" height="339"/>
+                                <rect key="frame" x="30" y="321.5" width="315" height="347"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FGW-5y-LkA" customClass="CustomTextField" customModule="Zakerly" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="315" height="32"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="33"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hlz-dW-J74" customClass="CustomTextField" customModule="Zakerly" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="42" width="315" height="32.5"/>
+                                        <rect key="frame" x="0.0" y="43" width="315" height="33.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HZz-uo-xcD" customClass="CustomTextField" customModule="Zakerly" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="84.5" width="315" height="32.5"/>
+                                        <rect key="frame" x="0.0" y="86.5" width="315" height="33.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zNi-LK-dvW" customClass="CustomTextField" customModule="Zakerly" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="127" width="315" height="32"/>
+                                        <rect key="frame" x="0.0" y="130" width="315" height="33.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ozb-82-Sd1" customClass="CustomTextField" customModule="Zakerly" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="169" width="315" height="32.5"/>
+                                        <rect key="frame" x="0.0" y="173.5" width="315" height="33"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select Specialisations" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zah-3G-RHN" customClass="CustomTextField" customModule="Zakerly" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="211.5" width="315" height="33"/>
+                                        <rect key="frame" x="0.0" y="216.5" width="315" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="EGP/hour" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kbl-Hp-2ix" customClass="CustomTextField" customModule="Zakerly" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="254.5" width="315" height="32"/>
+                                        <rect key="frame" x="0.0" y="260.5" width="315" height="33.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6d-FL-AUl" customClass="CustomButton" customModule="Zakerly" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="296.5" width="315" height="42.5"/>
+                                        <rect key="frame" x="0.0" y="304" width="315" height="43"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <state key="normal" title="Apply">
@@ -2897,14 +2879,14 @@
                                 </constraints>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img" translatesAutoresizingMaskIntoConstraints="NO" id="MXs-nq-O7y" customClass="RoundedImage" customModule="Zakerly" customModuleProvider="target">
-                                <rect key="frame" x="130" y="92" width="115" height="115"/>
+                                <rect key="frame" x="130" y="137.5" width="115" height="115"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="115" id="ixd-Mu-aMA"/>
                                     <constraint firstAttribute="width" secondItem="MXs-nq-O7y" secondAttribute="height" multiplier="1:1" id="mSU-i3-P3e"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Lr-OK-sJA" userLabel="Set Profile Photo">
-                                <rect key="frame" x="202" y="149" width="58" height="58"/>
+                                <rect key="frame" x="202" y="194.5" width="58" height="58"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" image="Cameraa"/>
                                 <connections>
@@ -2912,7 +2894,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kareem Fouad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="wIv-nt-5gP">
-                                <rect key="frame" x="77.5" y="227" width="220" height="34"/>
+                                <rect key="frame" x="77.5" y="272.5" width="220" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="6wB-Na-gk4"/>
                                     <constraint firstAttribute="width" constant="220" id="yLJ-Lj-ZAI"/>
@@ -2963,9 +2945,9 @@
     </designables>
     <inferredMetricsTieBreakers>
         <segue reference="iDF-nY-KlE"/>
-        <segue reference="DDa-y8-6CC"/>
-        <segue reference="EGK-Qc-t1y"/>
-        <segue reference="g2x-l6-SR0"/>
+        <segue reference="FPx-vX-HP4"/>
+        <segue reference="Sle-br-kRR"/>
+        <segue reference="tgk-G9-Zuf"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="10808" width="300" height="200"/>

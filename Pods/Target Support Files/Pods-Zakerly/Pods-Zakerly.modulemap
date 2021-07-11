@@ -1,0 +1,6 @@
+framework module Pods_Zakerly {
+  umbrella header "Pods-Zakerly-umbrella.h"
+
+  export *
+  module * { export * }
+}

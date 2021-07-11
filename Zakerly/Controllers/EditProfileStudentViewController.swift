@@ -14,6 +14,11 @@ class EditProfileStudentViewController: UIViewController {
     @IBOutlet weak var studentLastNameTF: CustomTextField!
     @IBOutlet weak var studentEmailTF: CustomTextField!
     @IBOutlet weak var studentPasswordTF: CustomTextField!
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        navigationController?.isNavigationBarHidden = false
+        navigationItem.hidesBackButton = false
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

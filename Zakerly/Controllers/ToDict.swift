@@ -6,8 +6,12 @@
 //
 
 import Foundation
+import FirebaseDatabase
 
-
-public protocol ToDict {
-    func toDict() -> NSDictionary 
+public protocol ToDict{
+    associatedtype T
+    func toDict() -> NSDictionary
+   static func fromDict(snapshot : DataSnapshot) -> T
+    
+    
 }

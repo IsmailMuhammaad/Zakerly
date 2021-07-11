@@ -14,11 +14,16 @@ class StudentProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSo
     @IBOutlet weak var myTeachersTableView: UITableView!
     @IBOutlet weak var studentPhoto: UIImageView!
     var arrInstructors = [Instructor]()
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        navigationController?.isNavigationBarHidden = true
+        navigationItem.hidesBackButton = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.hidesBackButton = true
-        navigationController?.isNavigationBarHidden = true
+
         myTeachersTableView.register(UINib(nibName: "FavouritesTableViewCell", bundle: nil), forCellReuseIdentifier: "myTeachersCell")
         studentName.text = "Ismail Muhammad"
         studentPhoto.layer.cornerRadius = studentPhoto.frame.width/2
@@ -45,7 +50,7 @@ class StudentProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSo
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = myTeachersTableView.dequeueReusableCell(withIdentifier: "myTeachersCell") as! FavouritesTableViewCell
         let data = arrInstructors[indexPath.row]
-        cell.setupCell(image: data.image, name: data.name, speciality: data.speciality, description: data.description)
+//        cell.setupCell(image: data.image, name: data.name, speciality: data.speciality, description: data.description)
         return cell
     }
     struct Instructor {
