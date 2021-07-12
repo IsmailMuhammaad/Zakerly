@@ -22,6 +22,11 @@ class RequestViewController: UIViewController, UITextFieldDelegate, UITextViewDe
         textView.textColor = UIColor.lightGray
         textView.delegate = self
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        navigationController?.isNavigationBarHidden = true
+        navigationItem.hidesBackButton = true
+    }
     
     func textViewDidBeginEditing(_ textView: UITextView) {
         if textView.text == "Request" {
@@ -44,6 +49,10 @@ class RequestViewController: UIViewController, UITextFieldDelegate, UITextViewDe
     }
 
     @IBAction func cancelBtnPressed(_ sender: Any) {
+        
+        navigationController?.popViewController(animated: true)
+        dismiss(animated: true, completion: nil)
+        
     }
     @IBAction func sendBtnPressed(_ sender: Any) {
     }

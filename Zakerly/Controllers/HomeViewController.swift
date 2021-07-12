@@ -27,8 +27,7 @@ class HomeViewController: UIViewController,UICollectionViewDelegate,UICollection
         ref.child("users").queryOrdered(byChild: "user/type").queryEqual(toValue: "INSTRUCTOR").observe(.value, with: { snapshot in
             for snap in snapshot.children {
                 self.arrInstructors.append(Instructor.fromDict(snapshot: snap as! DataSnapshot))
-                let l = Instructor.fromDict(snapshot: snap as! DataSnapshot)
-                print(l)
+
             }
             self.topCollectionView.reloadData()
             self.discoverTableView.reloadData()
@@ -74,6 +73,12 @@ class HomeViewController: UIViewController,UICollectionViewDelegate,UICollection
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 14
     }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let data = arrInstructors[indexPath.row]
+        let instructorVC = self.storyboard?.instantiateViewController(identifier: "instructorNotFriend") as! InstructorViewController
+        instructorVC.instructor = data
+        navigationController?.pushViewController(instructorVC, animated: true)
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrInstructors.count
     }
@@ -84,6 +89,13 @@ class HomeViewController: UIViewController,UICollectionViewDelegate,UICollection
         cell.setupCell(image: data.user.profileImg, name: "\(data.user.firstName) \(data.user.lastName)", speciality: data.title, description: data.bio)
 
         return cell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let data = arrInstructors[indexPath.row]
+        let instructorVC = self.storyboard?.instantiateViewController(identifier: "instructorNotFriend") as! InstructorViewController
+        instructorVC.instructor = data
+        navigationController?.pushViewController(instructorVC, animated: true)
+
     }
    /* struct Instructor {
         
